@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100&display=swap'); */
 
 * {
-  margin: 0;
+  /* margin: 0; */
   /* padding: 0; */
   font-family: "Roboto", sans-serif;
 }
@@ -23,12 +23,12 @@
   position: absolute;
   z-index: 9999;
 
-  max-width: 30%;
-  height: 100vh;
+  max-width: 30% !important;
+  height: 100vh !important;
 }
 
 .dalam {
-  height: 100%;
+  height: 100% !important;
   overflow-y: auto;
   overflow-x: hidden;
   /* max-width: 9%; */
@@ -220,7 +220,6 @@ textarea {
   right: 1%;
   bottom: 1.5rem;
   position: absolute;
-  z-index: 999;
   width: 60px;
   width: 160px;
   background-color: #fdfffc;

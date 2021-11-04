@@ -19,16 +19,13 @@
     <link rel="stylesheet" href="assets/css/custom.css">
 
     <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/remix-icon/remixicon.css">
 
     <!-- MAPBOX -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
-    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css" type="text/css" <title>PTSP</title>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css" type="text/css">
 
 
 
@@ -36,7 +33,7 @@
 
     <body>
 
-    <div id='map' style='width: 100%; height: 100vh;'>
+    <div id='map' style='width: 100%; height: 100%;'>
 
 
         <!-- hide -->
@@ -128,7 +125,7 @@
             <!-- Range Inputs -->
             <div class="form-group w-100 mt-3 mb-0 ml-2" id="radiusSlide">
                 <label style="font-size: 13px;" class="font-weight-bold" for="formControlRange">Radius</label>
-                <label style="font-size: 13px;" class="ml-1 font-weight-bold" id="OutputControlRange">Km</label>
+                <label style="font-size: 13px;" class="font-weight-bold" id="OutputControlRange">0 Km</label>
 
                 <input type="range" style="height: 6px;" class="form-control-range" id="ControlRange" min="500" max="3000" step="500" value="1000">
 
@@ -145,7 +142,6 @@
 
                 <div class="container" style="margin-left: -7px; margin-top:-5px; margin-bottom:-5px;">
                     <div class="flex-container">
-
                     <div>
                         <a style="padding:7px;" href="javascript:void(0);" class="btn aktip btn-outline-primary btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-map-marker"></i></a>
                         <br>
@@ -851,8 +847,6 @@
     </div>
 
 
-
-
     <div class="detail_omzet">
         <div class="container">
         <strong class="text_all">Detail Omzet</strong>
@@ -870,8 +864,14 @@
     <div class="detail_jumlah">
         <div class="container">
         <strong class="text_all">Detail Omzet</strong>
-        <p class="text_all">Kelurahan : Menteng</p>
-        <p class="font-weight-bold text_all">Rp 1.615.200.009</p>
+
+        <div class="text_all">
+                <div>Kelurahan : RAWA TERATE</div>
+                <p class="mb-0">
+                    <strong><em>Rp 5.110.507.000</em></strong>
+                </p>
+        </div>
+
         </div>
     </div>
 
@@ -880,16 +880,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="assets/js/popper.min.js"></script>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/Chart.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-
-
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
 
         <script>
             new Chart(document.getElementById("pie-chart"), {
@@ -935,6 +936,13 @@
 
 
         <script>
+            var kilometer = $('#ControlRange').val() / 1000;
+            $('#OutputControlRange').html(kilometer + ' Km');
+            $(document).on('input change', '#ControlRange', function() {
+            var kilometer = $(this).val() / 1000;
+            $('#OutputControlRange').html(kilometer + ' Km');
+            });
+
             var selector = '.menu_active .tombol_menu';
 
             $(selector).on('click', function() {
@@ -958,13 +966,6 @@
             $(".aktip").each(function() {
                 $(this).addClass("active");
             })
-            });
-
-            var kilometer = $('#ControlRange').val() / 1000;
-            $('#OutputControlRange').html(kilometer + ' Km');
-            $(document).on('input change', '#ControlRange', function() {
-            var kilometer = $(this).val() / 1000;
-            $('#OutputControlRange').html(kilometer + ' Km');
             });
         </script>
 
