@@ -227,6 +227,15 @@ textarea {
   background-color: #fdfffc;
 }
 
+.details_omzet {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+
 .detail_jumlah{
   right: 13%;
   bottom: 1.5rem;
@@ -243,4 +252,6 @@ textarea {
   bottom: 0;
   width: 100%;
 }
+
+
 
