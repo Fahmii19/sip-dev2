@@ -64,7 +64,7 @@
   z-index: 999;
   height: 60px;
   width: 20px;
-  background-color: #f0f0f0;
+  background-color: #fdfffc;
 }
 
 
@@ -82,7 +82,7 @@
   z-index: 999;
   height: 60px;
   width: 20px;
-  background-color: #f0f0f0;
+  background-color: #fdfffc;
 }
 
 .btn_icon_show {
@@ -115,7 +115,7 @@
 }
 
 .color_card_body {
-  background-color: #f0f0f0;
+  background-color: #fdfffc;
 }
 
 .layout_checkbox {
@@ -224,7 +224,7 @@ textarea {
   z-index: 999;
   width: 60px;
   width: 160px;
-  background-color: #fff;
+  background-color: #fdfffc;
 }
 
 .detail_jumlah{
@@ -234,7 +234,7 @@ textarea {
   z-index: 999;
   width: 60px;
   width: 160px;
-  background-color: #fff;
+  background-color: #fdfffc;
 }
 
 #map {
