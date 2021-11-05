@@ -1,1061 +1,1061 @@
-    <!doctype html>
-    <html lang="en">
+<!doctype html>
+<html lang="en">
 
-    <head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peta Perijinan dan Investasi DKI Jakarta</title>
+<head>
+<!-- Required meta tags -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peta Perijinan dan Investasi DKI Jakarta</title>
 
-    <link rel="icon" href="assets/gambar/favicon.ico">
-
-
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" >
-
-    <!-- Icon -->
-    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/remix-icon/remixicon.css">
-
-    <!-- MAPBOX -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css" type="text/css">
-
-    <!-- custom -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+<link rel="icon" href="assets/gambar/favicon.ico">
 
 
+<!-- Bootstrap CSS -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css" >
+
+<!-- Icon -->
+<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/remix-icon/remixicon.css">
+
+<!-- MAPBOX -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css" type="text/css">
+
+<!-- custom -->
+<link rel="stylesheet" href="assets/css/custom.css">
 
 
 
-    </head>
-
-    <body>
 
 
-        <!-- hide -->
-        <button class="btn btn_hide_side_bar" type="button" id="hide_side_bar">
-        <i class="btn_icon_hide ri-arrow-left-s-fill fa-2x"></i>
-        </button>
+</head>
 
-        <!-- show -->
-        <button class="btn btn_show_side_bar" type="button" id="show_side_bar">
-        <i class="btn_icon_show ri-arrow-right-s-fill fa-2x"></i>
-        </button>
+<body>
 
-        <div class="pembungkus" id="sidebar">
-        <div class="dalam">
 
-            <div style="background-color: #fdfffc; width:100%; height:10%" class="card-header">
+    <!-- hide -->
+    <button class="btn btn_hide_side_bar" type="button" id="hide_side_bar">
+    <i class="btn_icon_hide ri-arrow-left-s-fill fa-2x"></i>
+    </button>
 
-            <img src="assets/gambar/logo_jakpintas.png" width="55px" style="margin-left: 10%;margin-right: 10px;">
-            <span class="HeadText">Peta Perijinan dan Investasi</span>
+    <!-- show -->
+    <button class="btn btn_show_side_bar" type="button" id="show_side_bar">
+    <i class="btn_icon_show ri-arrow-right-s-fill fa-2x"></i>
+    </button>
 
+    <div class="pembungkus" id="sidebar">
+    <div class="dalam">
+
+        <div style="background-color: #fdfffc; width:100%; height:10%" class="card-header">
+
+        <img src="assets/gambar/logo_jakpintas.png" width="55px" style="margin-left: 10%;margin-right: 10px;">
+        <span class="HeadText">Peta Perijinan dan Investasi</span>
+
+        </div>
+
+        <div class="card-body color_card_body">
+
+        <!-- Search -->
+        <div class="row">
+            <div class="col-md-12">
+            <div class="input-group input-group-md mb-1">
+                <input type="search" id="example-search-input" class="form-control tombol_search py-2 border-right-0 border" placeholder="Cari nama jalan ...">
+                <span class="input-group-append">
+                <button class="btn btn-outline-secondary tombol_search border-left-0 border" type="button">
+                    <i class="fa fa-search"></i>
+                </button>
+                </span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="layout_checkbox">
+
+            <div class="form-check">
+            <ul class="list-group list-group-flush">
+                <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                <input type="checkbox" class="form-check-input" id="checkbox1">
+                <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox1">Wilayah</label>
+                </li>
+            </ul>
             </div>
 
-            <div class="card-body color_card_body">
+            <div class="form-check">
+            <ul class="list-group list-group-flush">
+                <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                <input type="checkbox" class="form-check-input" id="checkbox2">
+                <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox2">Total Omzet Per Kelurahan</label>
+                </li>
+            </ul>
+            </div>
 
-            <!-- Search -->
-            <div class="row">
-                <div class="col-md-12">
-                <div class="input-group input-group-md mb-1">
-                    <input type="search" id="example-search-input" class="form-control tombol_search py-2 border-right-0 border" placeholder="Cari nama jalan ...">
-                    <span class="input-group-append">
-                    <button class="btn btn-outline-secondary tombol_search border-left-0 border" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                    </span>
+            <div class="form-check">
+            <ul class="list-group list-group-flush">
+                <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                <input type="checkbox" class="form-check-input" id="checkbox3">
+                <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox3">Rencana Kota</label>
+                </li>
+            </ul>
+            </div>
+
+            <div class="form-check">
+            <ul class="list-group list-group-flush">
+                <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                <input type="checkbox" class="form-check-input" id="checkbox4">
+                <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox4">Sebaran Usaha Mikro Kecil</label>
+                </li>
+            </ul>
+            </div>
+
+            <div class="form-check mb-2">
+            <ul class="list-group list-group-flush">
+                <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                <input type="checkbox" class="form-check-input" id="checkbox4">
+                <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox4">Harga Sewa Kantor</label>
+                </li>
+            </ul>
+            </div>
+
+        </div>
+
+        <!-- Range Inputs -->
+        <div class="form-group w-100 mt-3 mb-0 ml-2" id="radiusSlide">
+            <label style="font-size: 13px;" class="font-weight-bold" for="formControlRange">Radius</label>
+            <label style="font-size: 13px;" class="font-weight-bold" id="OutputControlRange">0 Km</label>
+
+            <input type="range" style="height: 6px;" class="form-control-range" id="ControlRange" min="500" max="3000" step="500" value="1000">
+
+        </div>
+
+        <div style="margin-top:19px; margin-bottom:19px;" class="text-right text_all"><a href="#" title="Menggunakan Bahasa Indonesia">Bahasa</a> | <a href="en" title="Menggunakan Bahasa Inggris">English</a></div>
+
+        <hr>
+
+        <div class="accordion" id="accordionExample">
+
+            <!-- Menu -->
+            <div class="row menu_active">
+
+            <div class="container" style="margin-left: -7px; margin-top:-5px; margin-bottom:-5px;">
+                <div class="flex-container">
+                <div>
+                    <a style="padding:7px;" href="" class="btn aktip btn-outline-primary btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-map-marker"></i></a>
+                    <br>
+                    <label class="size_menu">Lokasi</label>
                 </div>
+
+                <div> <a style="padding:7px;" href="" class="btn btn-outline-primary btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="ri-funds-box-fill"></i></a>
+                    <br>
+                    <label class="size_menu">Ekonomi</label>
+                </div>
+
+                <div><a style="padding:9px;" href="" class="btn  btn-outline-primary icon-round btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="ri-map-2-fill"></i></i></a>
+                    <br>
+                    <label class="size_menu">Zonasi</label>
+                </div>
+
+                <div><a style="padding:9px;" href="" class="btn  btn-outline-primary icon-round btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="ri-home-4-fill"></i></a>
+                    <br>
+                    <label class="size_menu">Persil</label>
+                </div>
+
+                <div> <a style="padding:9px;" href="" class="btn  btn-outline-primary icon-round btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><i class="fa fa-crosshairs"></i></a>
+                    <br>
+                    <label class="size_menu">POI</label>
+                </div>
+
+                <div>
+                    <a style="padding:8px;" href="" class="btn  btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><i class="ri-user-search-fill"></i></a>
+                    <label class="size_menu mt-2">KBLI Kegiatan</label>
+                </div>
+
+                <div>
+                    <a style="padding:8px;" href="" class="btn btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><i class="ri-map-pin-add-fill"></i></a>
+                    <label class="size_menu mt-2">KBLI &nbsp;Lokasi</label></span>
+                </div>
+
+                <!-- <div>
+                    <a style="padding:8px;" href="" class="btn btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><i class="ri-calculator-fill"></i></a>
+                    <label class="text-center mt-2  size_menu">Kalkulator Intensitas</label></span>
+                </div>
+
+                <div>
+                    <a style="padding:8px;" href="" class="btn btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><i class="ri-calculator-fill"></i></a>
+                    <label class="text-center mt-2  size_menu">HBU Analyzer</label></span>
+                </div> -->
+
                 </div>
             </div>
 
-            <!-- Checkbox -->
-            <div class="layout_checkbox">
-
-                <div class="form-check">
-                <ul class="list-group list-group-flush">
-                    <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                    <input type="checkbox" class="form-check-input" id="checkbox1">
-                    <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox1">Wilayah</label>
-                    </li>
-                </ul>
-                </div>
-
-                <div class="form-check">
-                <ul class="list-group list-group-flush">
-                    <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                    <input type="checkbox" class="form-check-input" id="checkbox2">
-                    <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox2">Total Omzet Per Kelurahan</label>
-                    </li>
-                </ul>
-                </div>
-
-                <div class="form-check">
-                <ul class="list-group list-group-flush">
-                    <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                    <input type="checkbox" class="form-check-input" id="checkbox3">
-                    <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox3">Rencana Kota</label>
-                    </li>
-                </ul>
-                </div>
-
-                <div class="form-check">
-                <ul class="list-group list-group-flush">
-                    <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                    <input type="checkbox" class="form-check-input" id="checkbox4">
-                    <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox4">Sebaran Usaha Mikro Kecil</label>
-                    </li>
-                </ul>
-                </div>
-
-                <div class="form-check mb-2">
-                <ul class="list-group list-group-flush">
-                    <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                    <input type="checkbox" class="form-check-input" id="checkbox4">
-                    <label style="margin-top: 5px;" class="form-check-label text_checkbox text_all" for="checkbox4">Harga Sewa Kantor</label>
-                    </li>
-                </ul>
-                </div>
 
             </div>
-
-            <!-- Range Inputs -->
-            <div class="form-group w-100 mt-3 mb-0 ml-2" id="radiusSlide">
-                <label style="font-size: 13px;" class="font-weight-bold" for="formControlRange">Radius</label>
-                <label style="font-size: 13px;" class="font-weight-bold" id="OutputControlRange">0 Km</label>
-
-                <input type="range" style="height: 6px;" class="form-control-range" id="ControlRange" min="500" max="3000" step="500" value="1000">
-
-            </div>
-
-            <div style="margin-top:19px; margin-bottom:19px;" class="text-right text_all"><a href="#" title="Menggunakan Bahasa Indonesia">Bahasa</a> | <a href="en" title="Menggunakan Bahasa Inggris">English</a></div>
 
             <hr>
 
-            <div class="accordion" id="accordionExample">
+            <!-- Isi Menu -->
 
-                <!-- Menu -->
-                <div class="row menu_active">
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
 
-                <div class="container" style="margin-left: -7px; margin-top:-5px; margin-bottom:-5px;">
-                    <div class="flex-container">
-                    <div>
-                        <a style="padding:7px;" href="" class="btn aktip btn-outline-primary btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-map-marker"></i></a>
-                        <br>
-                        <label class="size_menu">Lokasi</label>
+            <div class="container">
+                <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Info Lokasi</p>
+
+                <div class="row space_judul row_mid_judul">
+                <div class="col-md-5 text_all"><label>Koordinat</label></div>
+                <div class="col-md-7 text_all">
+                    <p>-6427374984, 1009843234a</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Kelurahan</label></div>
+                <div class="col-md-7 text_all">
+                    <p>Jati Padang</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Kecamatan</label></div>
+                <div class="col-md-7 text_all">
+                    <p>Pasar Minggu</span></p>
+                </div>
+                </div>
+
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Wilayah</label></div>
+                <div class="col-md-7 text_all">
+                    <p>Jakarta Selatan</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Luas</label></div>
+                <div class="col-md-7 text_all">
+                    <p>400 hektar</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Kepadatan</label></div>
+                <div class="col-md-7 text_all">
+                    <p>1500 jiwa/km2</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Rasio Gini</label></div>
+                <div class="col-md-7 text_all">
+                    <p>0,41</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>UMR</label></div>
+                <div class="col-md-7 text_all">
+                    <p>Rp 4.300.000</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Tiga Besar KBLI</label></div>
+                <div class="col-md-7 text_all">
+                    <p>43210</span></p>
+                    <p style="margin-top: -13px;">43210</span></p>
+                    <p style="margin-top: -13px;">43210</span></p>
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="container">
+
+                <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Usaha Mikro Kecil</p>
+
+                <div class="row space_judul row_mid_judul">
+                <div class="col-md-5 text_all"><label>Pelaku Usaha</label></div>
+                <div class="col-md-7 text_all">
+                    <p>373 <span>orang</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-md-5 text_all"><label>Total Omset</label></div>
+                <div class="col-md-7 text_all">
+                    <p>3.685.675.000 <span>per bulan</span></p>
+                </div>
+
+                <div class="col-lg-8 offset-2">
+                    <p style="font-size: 14px; margin-bottom:-24px;" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
+                    <canvas id="pie-chart" width="37" height="50">
+
+                    </canvas>
+                </div>
+
+                <div class="col-lg-8 offset-2 mt-4">
+                    <canvas id="bar-chart-grouped" width="100" height="150"></canvas>
+                </div>
+
+                </div>
+
+
+
+                <p style="font-size: 14px;" class="card-title mb-3 mt-3  text-center font-weight-bold">Pendapatan Rata-Rata Per Bulan</p>
+
+                <!--
+                <div class="conteiner">
+
+                <div class="pembungkus_konten_utama">
+
+                    <div class="konten_utama">
+
+                    <div class="konten_table1">
+                        <p>0 - 5 juta</p>
                     </div>
 
-                    <div> <a style="padding:7px;" href="" class="btn btn-outline-primary btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="ri-funds-box-fill"></i></a>
-                        <br>
-                        <label class="size_menu">Ekonomi</label>
+                    <div class="konten_table1">
+                        <p>4.593 orang</p>
                     </div>
 
-                    <div><a style="padding:9px;" href="" class="btn  btn-outline-primary icon-round btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="ri-map-2-fill"></i></i></a>
-                        <br>
-                        <label class="size_menu">Zonasi</label>
                     </div>
 
-                    <div><a style="padding:9px;" href="" class="btn  btn-outline-primary icon-round btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i class="ri-home-4-fill"></i></a>
-                        <br>
-                        <label class="size_menu">Persil</label>
-                    </div>
+                </div>
 
-                    <div> <a style="padding:9px;" href="" class="btn  btn-outline-primary icon-round btn-md  tombol_menu" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><i class="fa fa-crosshairs"></i></a>
-                        <br>
-                        <label class="size_menu">POI</label>
-                    </div>
 
-                    <div>
-                        <a style="padding:8px;" href="" class="btn  btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><i class="ri-user-search-fill"></i></a>
-                        <label class="size_menu mt-2">KBLI Kegiatan</label>
-                    </div>
 
-                    <div>
-                        <a style="padding:8px;" href="" class="btn btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven"><i class="ri-map-pin-add-fill"></i></a>
-                        <label class="size_menu mt-2">KBLI &nbsp;Lokasi</label></span>
-                    </div>
+                </div> -->
 
-                    <div>
-                        <a style="padding:8px;" href="" class="btn btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight"><i class="ri-calculator-fill"></i></a>
-                        <label class="text-center mt-2  size_menu">Kalkulator Intensitas</label></span>
-                    </div>
 
-                    <div>
-                        <a style="padding:8px;" href="" class="btn btn-outline-primary icon-round btn-md tombol_menu" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"><i class="ri-calculator-fill"></i></a>
-                        <label class="text-center mt-2  size_menu">HBU Analyzer</label></span>
-                    </div>
+                <div class="row space_judul" style="margin-left:15px;">
+                <div class="col-md-1"></div>
 
+                <div style="margin-left: 10px;" class="col-md-4 text_all"><label>0 - 5 <span>juta</span></label></div>
+
+                <div class="col-md-2 text_all" style="margin-left: 15px;">
+                    <p class="text-right">4.593</p>
+                </div>
+                <div class="col-md-1 text_all">
+                    <span style="margin-left: -18px;">orang</span>
+                </div>
+
+                </div>
+
+                <div class="row space_text" style="margin-left:15px; margin-top: -13px;">
+                <div class="col-md-1"></div>
+                <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>6 - 10 <span>juta</span></label></div>
+                <div class="col-lg-2 text_all" style="margin-left: 15px;">
+                    <p class="text-right">2045</p>
+                </div>
+                <div class="col-md-1 text_all">
+                    <span style="margin-left: -18px;">orang</span>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text" style="margin-left:15px;">
+                <div class="col-md-1"></div>
+                <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>11 - 15 <span>juta</span></label></div>
+                <div class="col-lg-2 text_all" style="margin-left: 15px;">
+                    <p class="text-right">1233</p>
+                </div>
+                <div class="col-md-1 text_all">
+                    <span style="margin-left: -18px;">orang</span>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text" style="margin-left:15px;">
+                <div class="col-md-1"></div>
+                <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>16 - 20 <span>juta</span></label></div>
+
+                <div class="col-lg-2 text_all" style="margin-left: 15px;">
+                    <p class="text-right">497</p>
+                </div>
+
+                <div class="col-md-1 text_all">
+                    <span style="margin-left: -18px;">orang</span>
+                </div>
+
+                </div>
+
+                <div class="row space_text row_mid_text" style="margin-left:15px;">
+                <div class="col-md-1"></div>
+                <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>> 20 <span>juta</span></label></div>
+                <div class="col-lg-2 text_all" style="margin-left: 15px;">
+                    <p class="text-right">124</p>
+                </div>
+                <div class="col-md-1 text_all">
+                    <span style="margin-left: -18px;">orang</span>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text" style="margin-left:15px;">
+                <div class="col-md-1"></div>
+                <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>> N/A</label></div>
+                <div class="col-lg-2 text_all" style="margin-left: 15px;">
+                    <p class="text-right">3.866</p>
+                </div>
+                <div class="col-md-1 text_all">
+                    <span style="margin-left: -18px;">orang</span>
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionExample">
+
+            <div class="container">
+                <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Zonasi</p>
+
+                <div class="row space_judul row_mid_judul">
+                <div class="col-md-5 text_all"><label>Nama Usaha</label></div>
+                <div class="col-md-7 text_all">
+                    <p>LA FROZEN FOOD</p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Zona</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>Zona Perumahan KDB Sedang-Tinggi</p>
+                    <!-- <p>-6427374984, 1009843234a</p> -->
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Sub Zona</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>R.5</p>
+                </div>
+                </div>
+
+            </div>
+            </div>
+
+            <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordionExample">
+
+            <div class="container">
+                <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Persil</p>
+
+                <div class="row space_judul row_mid_judul">
+                <div class="col-md-5 text_all"><label>Lahan Eksisting</label></div>
+                <div class="col-md-7 text_all">
+                    <p>Rumah Besar</p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Perkiraan Harga</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>Rp.5.000.000,- s/d Rp.10.000.000,-&nbsp;&nbsp;<span>/m²</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Tipe Hak</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>Hak Pakai</p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Luas</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>11.755<span>/m²</span></p>
+                </div>
+                </div>
+
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Kode Blok</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>43</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>Sub Blok</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>43</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>TPZ</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>43</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>CD TPZ</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>43</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>KDH</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>43</span></p>
+                </div>
+                </div>
+
+                <div class="row space_text row_mid_text">
+                <div class="col-lg-5 text_all"><label>KLB</label></div>
+                <div class="col-lg-7 text_all">
+                    <p>1,2</span></p>
+                </div>
+                </div>
+
+
+            </div>
+            </div>
+
+            <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="container">
+
+                <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">POI</p>
+
+
+                <div class="accordion" id="PoiCollabse" style="margin-top: 14px;">
+
+
+                <div class="row row_mid_judul2">
+                    <div class="col-md-12 flex-column">
+                    <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiOne" aria-expanded="true" aria-controls="collapsePoiOne">
+                        <b>Minimarket</b></button>
+                    </div>
+                </div>
+
+                <div id="collapsePoiOne" class="collapse show" aria-labelledby="headingOne" data-parent="#PoiCollabse">
+                    <div class="card-body text_poi2 row_mid_judul">
+                    <ul class="list-group list-group-flush">
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Alfamidi Siaga
+                        <span>0.185 km</span>
+                        </li>
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Familymart Pejaten
+                        <span>0.575 km</span>
+                        </li>
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Alfamart Siaga Raya
+                        <span>0.641 km</span>
+                        </li>
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Alfamidi Sawo Manilla
+                        <span>0.715 km</span>
+                        </li>
+
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="row row_mid_judul">
+                    <div class="col-md-12 flex-column">
+                    <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiTwo" aria-expanded="true" aria-controls="collapsePoiTwo">
+                        <b>Sekolah</b></button>
+                    </div>
+                </div>
+
+                <div id="collapsePoiTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#PoiCollabse">
+                    <div class="card-body text_poi2 row_mid_judul">
+                    <ul class="list-group list-group-flush">
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        SMP Siaga
+                        <span>0.185 km</span>
+                        </li>
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        SMP Pejaten
+                        <span>0.575 km</span>
+                        </li>
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        SMA Siaga Raya
+                        <span>0.641 km</span>
+                        </li>
+
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        SMA Sawo Manilla
+                        <span>0.715 km</span>
+                        </li>
+
+                    </ul>
                     </div>
                 </div>
 
 
+                <div class="row row_mid_judul">
+                    <div class="col-md-12 flex-column">
+                    <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiThre" aria-expanded="true" aria-controls="collapsePoiThre">
+                        <b>Hotel</b></button>
+                    </div>
                 </div>
 
-                <hr>
+                <div id="collapsePoiThre" class="collapse show" aria-labelledby="headingOne" data-parent="#PoiCollabse">
+                    <div class="card-body text_poi2 row_mid_judul">
+                    <ul class="list-group list-group-flush">
 
-                <!-- Isi Menu -->
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Wisma Siaga
+                        <span>0.185 km</span>
+                        </li>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Hotel Pejaten
+                        <span>0.575 km</span>
+                        </li>
 
-                <div class="container">
-                    <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Info Lokasi</p>
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Hotel Siaga Raya
+                        <span>0.641 km</span>
+                        </li>
 
-                    <div class="row space_judul row_mid_judul">
-                    <div class="col-md-5 text_all"><label>Koordinat</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>-6427374984, 1009843234a</span></p>
-                    </div>
-                    </div>
+                        <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
+                        Wisma Sawo Manilla
+                        <span>0.715 km</span>
+                        </li>
 
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Kelurahan</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>Jati Padang</span></p>
+                    </ul>
                     </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Kecamatan</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>Pasar Minggu</span></p>
-                    </div>
-                    </div>
-
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Wilayah</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>Jakarta Selatan</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Luas</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>400 hektar</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Kepadatan</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>1500 jiwa/km2</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Rasio Gini</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>0,41</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>UMR</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>Rp 4.300.000</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Tiga Besar KBLI</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>43210</span></p>
-                        <p style="margin-top: -13px;">43210</span></p>
-                        <p style="margin-top: -13px;">43210</span></p>
-                    </div>
-                    </div>
-
                 </div>
-                </div>
-
-                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="container">
-
-                    <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Usaha Mikro Kecil</p>
-
-                    <div class="row space_judul row_mid_judul">
-                    <div class="col-md-5 text_all"><label>Pelaku Usaha</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>373 <span>orang</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-md-5 text_all"><label>Total Omset</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>3.685.675.000 <span>per bulan</span></p>
-                    </div>
-
-                    <div class="col-lg-8 offset-2">
-                        <p style="font-size: 14px; margin-bottom:-24px;" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
-                        <canvas id="pie-chart" width="37" height="50">
-
-                        </canvas>
-                    </div>
-
-                    <div class="col-lg-8 offset-2 mt-4">
-                        <canvas id="bar-chart-grouped" width="100" height="150"></canvas>
-                    </div>
-
-                    </div>
-
-
-
-                    <p style="font-size: 14px;" class="card-title mb-3 mt-3  text-center font-weight-bold">Pendapatan Rata-Rata Per Bulan</p>
-
-                    <!--
-                    <div class="conteiner">
-
-                    <div class="pembungkus_konten_utama">
-
-                        <div class="konten_utama">
-
-                        <div class="konten_table1">
-                            <p>0 - 5 juta</p>
-                        </div>
-
-                        <div class="konten_table1">
-                            <p>4.593 orang</p>
-                        </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    </div> -->
-
-
-                    <div class="row space_judul" style="margin-left:15px;">
-                    <div class="col-md-1"></div>
-
-                    <div style="margin-left: 10px;" class="col-md-4 text_all"><label>0 - 5 <span>juta</span></label></div>
-
-                    <div class="col-md-2 text_all" style="margin-left: 15px;">
-                        <p class="text-right">4.593</p>
-                    </div>
-                    <div class="col-md-1 text_all">
-                        <span style="margin-left: -18px;">orang</span>
-                    </div>
-
-                    </div>
-
-                    <div class="row space_text" style="margin-left:15px; margin-top: -13px;">
-                    <div class="col-md-1"></div>
-                    <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>6 - 10 <span>juta</span></label></div>
-                    <div class="col-lg-2 text_all" style="margin-left: 15px;">
-                        <p class="text-right">2045</p>
-                    </div>
-                    <div class="col-md-1 text_all">
-                        <span style="margin-left: -18px;">orang</span>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text" style="margin-left:15px;">
-                    <div class="col-md-1"></div>
-                    <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>11 - 15 <span>juta</span></label></div>
-                    <div class="col-lg-2 text_all" style="margin-left: 15px;">
-                        <p class="text-right">1233</p>
-                    </div>
-                    <div class="col-md-1 text_all">
-                        <span style="margin-left: -18px;">orang</span>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text" style="margin-left:15px;">
-                    <div class="col-md-1"></div>
-                    <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>16 - 20 <span>juta</span></label></div>
-
-                    <div class="col-lg-2 text_all" style="margin-left: 15px;">
-                        <p class="text-right">497</p>
-                    </div>
-
-                    <div class="col-md-1 text_all">
-                        <span style="margin-left: -18px;">orang</span>
-                    </div>
-
-                    </div>
-
-                    <div class="row space_text row_mid_text" style="margin-left:15px;">
-                    <div class="col-md-1"></div>
-                    <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>> 20 <span>juta</span></label></div>
-                    <div class="col-lg-2 text_all" style="margin-left: 15px;">
-                        <p class="text-right">124</p>
-                    </div>
-                    <div class="col-md-1 text_all">
-                        <span style="margin-left: -18px;">orang</span>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text" style="margin-left:15px;">
-                    <div class="col-md-1"></div>
-                    <div style="margin-left: 10px;" class="col-lg-4 text_all"><label>> N/A</label></div>
-                    <div class="col-lg-2 text_all" style="margin-left: 15px;">
-                        <p class="text-right">3.866</p>
-                    </div>
-                    <div class="col-md-1 text_all">
-                        <span style="margin-left: -18px;">orang</span>
-                    </div>
-                    </div>
-
-                </div>
-                </div>
-
-                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionExample">
-
-                <div class="container">
-                    <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Zonasi</p>
-
-                    <div class="row space_judul row_mid_judul">
-                    <div class="col-md-5 text_all"><label>Nama Usaha</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>LA FROZEN FOOD</p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Zona</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>Zona Perumahan KDB Sedang-Tinggi</p>
-                        <!-- <p>-6427374984, 1009843234a</p> -->
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Sub Zona</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>R.5</p>
-                    </div>
-                    </div>
-
-                </div>
-                </div>
-
-                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordionExample">
-
-                <div class="container">
-                    <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Persil</p>
-
-                    <div class="row space_judul row_mid_judul">
-                    <div class="col-md-5 text_all"><label>Lahan Eksisting</label></div>
-                    <div class="col-md-7 text_all">
-                        <p>Rumah Besar</p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Perkiraan Harga</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>Rp.5.000.000,- s/d Rp.10.000.000,-&nbsp;&nbsp;<span>/m²</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Tipe Hak</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>Hak Pakai</p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Luas</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>11.755<span>/m²</span></p>
-                    </div>
-                    </div>
-
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Kode Blok</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>43</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>Sub Blok</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>43</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>TPZ</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>43</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>CD TPZ</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>43</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>KDH</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>43</span></p>
-                    </div>
-                    </div>
-
-                    <div class="row space_text row_mid_text">
-                    <div class="col-lg-5 text_all"><label>KLB</label></div>
-                    <div class="col-lg-7 text_all">
-                        <p>1,2</span></p>
-                    </div>
-                    </div>
-
-
-                </div>
-                </div>
-
-                <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordionExample">
-                <div class="container">
-
-                    <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">POI</p>
-
-
-                    <div class="accordion" id="PoiCollabse" style="margin-top: 14px;">
-
-
-                    <div class="row row_mid_judul2">
-                        <div class="col-md-12 flex-column">
-                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiOne" aria-expanded="true" aria-controls="collapsePoiOne">
-                            <b>Minimarket</b></button>
-                        </div>
-                    </div>
-
-                    <div id="collapsePoiOne" class="collapse show" aria-labelledby="headingOne" data-parent="#PoiCollabse">
-                        <div class="card-body text_poi2 row_mid_judul">
-                        <ul class="list-group list-group-flush">
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Alfamidi Siaga
-                            <span>0.185 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Familymart Pejaten
-                            <span>0.575 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Alfamart Siaga Raya
-                            <span>0.641 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Alfamidi Sawo Manilla
-                            <span>0.715 km</span>
-                            </li>
-
-                        </ul>
-                        </div>
-                    </div>
-
-                    <div class="row row_mid_judul">
-                        <div class="col-md-12 flex-column">
-                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiTwo" aria-expanded="true" aria-controls="collapsePoiTwo">
-                            <b>Sekolah</b></button>
-                        </div>
-                    </div>
-
-                    <div id="collapsePoiTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#PoiCollabse">
-                        <div class="card-body text_poi2 row_mid_judul">
-                        <ul class="list-group list-group-flush">
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            SMP Siaga
-                            <span>0.185 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            SMP Pejaten
-                            <span>0.575 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            SMA Siaga Raya
-                            <span>0.641 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            SMA Sawo Manilla
-                            <span>0.715 km</span>
-                            </li>
-
-                        </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="row row_mid_judul">
-                        <div class="col-md-12 flex-column">
-                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiThre" aria-expanded="true" aria-controls="collapsePoiThre">
-                            <b>Hotel</b></button>
-                        </div>
-                    </div>
-
-                    <div id="collapsePoiThre" class="collapse show" aria-labelledby="headingOne" data-parent="#PoiCollabse">
-                        <div class="card-body text_poi2 row_mid_judul">
-                        <ul class="list-group list-group-flush">
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Wisma Siaga
-                            <span>0.185 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Hotel Pejaten
-                            <span>0.575 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Hotel Siaga Raya
-                            <span>0.641 km</span>
-                            </li>
-
-                            <li class="listgroup-cust d-flex justify-content-between align-items-center text_all">
-                            Wisma Sawo Manilla
-                            <span>0.715 km</span>
-                            </li>
-
-                        </ul>
-                        </div>
-                    </div>
-
-                    </div>
-
-
-                </div>
-                </div>
-
-                <div id="collapseSix" class="collapse " aria-labelledby="headingSix" data-parent="#accordionExample">
-
-                <div class="container">
-
-                    <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Kegiatan</p>
-
-
-                    <div style="margin-top: 15px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Kegiatan</label></div>
-                    <div class="col-md-7 text_all">
-                        <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
-                    </div>
-                    </div>
-
-
-                    <div style="margin-top: 5px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Sektor</label></div>
-                    <div class="col-md-7 text_all">
-                        <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
-                    </div>
-                    </div>
-
-
-                    <div style="margin-top: 5px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
-                    <div class="col-md-7">
-                        <div class="form-group input-group-sm">
-                        <select class="form-control" style="margin-left: 10px;">
-                            <option>Skala1</option>
-                            <option>Skala2</option>
-                        </select>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div style="margin-top: -7px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Skala Usaha</label></div>
-                    <div class="col-md-7">
-                        <div class="form-group input-group-sm">
-                        <select class="form-control" style="margin-left: 10px;">
-                            <option>Skala1</option>
-                            <option>Skala2</option>
-                        </select>
-                        </div>
-                    </div>
-                    </div>
-
 
                 </div>
 
-                <table style="margin:0;" class="table table-borderless mt-1">
-                    <thead>
+
+            </div>
+            </div>
+
+            <div id="collapseSix" class="collapse " aria-labelledby="headingSix" data-parent="#accordionExample">
+
+            <div class="container">
+
+                <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Kegiatan</p>
+
+
+                <div style="margin-top: 15px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Kegiatan</label></div>
+                <div class="col-md-7 text_all">
+                    <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
+                </div>
+                </div>
+
+
+                <div style="margin-top: 5px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Sektor</label></div>
+                <div class="col-md-7 text_all">
+                    <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
+                </div>
+                </div>
+
+
+                <div style="margin-top: 5px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
+                <div class="col-md-7">
+                    <div class="form-group input-group-sm">
+                    <select class="form-control" style="margin-left: 10px;">
+                        <option>Skala1</option>
+                        <option>Skala2</option>
+                    </select>
+                    </div>
+                </div>
+                </div>
+
+                <div style="margin-top: -7px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Skala Usaha</label></div>
+                <div class="col-md-7">
+                    <div class="form-group input-group-sm">
+                    <select class="form-control" style="margin-left: 10px;">
+                        <option>Skala1</option>
+                        <option>Skala2</option>
+                    </select>
+                    </div>
+                </div>
+                </div>
+
+
+            </div>
+
+            <table style="margin:0;" class="table table-borderless mt-1">
+                <thead>
+                <tr>
+                    <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
+                    <th class="text_all text-center">Kegiatan</th>
+                    <th class="text_all text-center">Resiko</th>
+                    <th class="text_all text-center">ITBX</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text_all text-center" style="width:30%;">13472</td>
+                    <td class="text_all text-center">Perdagangan Kue Basah</td>
+                    <td class="text_all text-center">Menengah</td>
+                    <td class="text_all text-center">Bersyarat</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <p style="font-size: 14px;" class="card-title  text-center font-weight-bold mt-2">Keterangan</p>
+
+
+            </div>
+
+            <div id="collapseSeven" class="collapse " aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="container">
+
+                <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Lokasi</p>
+
+                <div style="margin-top: 15px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
+                <div class="col-md-7">
+                    <div class="form-group input-group-sm">
+                    <select class="form-control" style="margin-left: 10px;">
+                        <option>Skala1</option>
+                        <option>Skala2</option>
+                        <option>Skala2</option>
+
+                    </select>
+                    </div>
+                </div>
+                </div>
+
+                <div style="margin-top: -5px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Kegiatan</label></div>
+                <div class="col-md-7 text_all">
+                    <textarea style="margin-left: 10px;" name="" id="" cols="23" rows="2"></textarea>
+                </div>
+                </div>
+
+                <div style="margin-top: 5px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Sektor Input</label></div>
+                <div class="col-md-7 text_all">
+                    <textarea style="margin-left: 10px;" name="" id="" cols="23" rows="2"></textarea>
+                </div>
+                </div>
+
+                <div style="margin-top: 6px;" class="row ml-1">
+                <div class="col-md-4 text_all"><label>Skala Usaha</label></div>
+                <div class="col-md-7">
+                    <div class="form-group input-group-sm">
+                    <select style="margin-left: 10px;" class="form-control">
+                        <option>Skala1</option>
+                        <option>Skala2</option>
+                    </select>
+                    </div>
+                </div>
+                </div>
+
+
+            </div>
+
+            <table style="margin:0;" class="table table-borderless mt-1">
+                <thead>
+                <tr>
+                    <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
+                    <th class="text_all text-center">Kegiatan</th>
+                    <th class="text_all text-center">Resiko</th>
+                    <th class="text_all text-center">ITBX</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="text_all text-center" style="width:30%;">13472</td>
+                    <td class="text_all text-center">Perdagangan Kue Basah</td>
+                    <td class="text_all text-center">Menengah</td>
+                    <td class="text_all text-center">Bersyarat</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Keterangan</p>
+
+
+            </div>
+
+            <div id="collapseEight" class="collapse " aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="container">
+
+                <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">Kalkulator</p>
+
+                <table style="margin-top: 18px;" class="table table-hover">
+                <thead>
                     <tr>
-                        <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
-                        <th class="text_all text-center">Kegiatan</th>
-                        <th class="text_all text-center">Resiko</th>
-                        <th class="text_all text-center">ITBX</th>
+                    <th class="text_all">Kode</th>
+                    <th class="text_all">KBLI</th>
+                    <th class="text_all">ITBX</th>
                     </tr>
-                    </thead>
-                    <tbody>
+                </thead>
+                <tbody>
                     <tr>
-                        <td class="text_all text-center" style="width:30%;">13472</td>
-                        <td class="text_all text-center">Perdagangan Kue Basah</td>
-                        <td class="text_all text-center">Menengah</td>
-                        <td class="text_all text-center">Bersyarat</td>
-
+                    <td class="text_all">1</td>
+                    <td class="text_all">Example1</td>
+                    <td class="text_all">Example1</td>
                     </tr>
-                    </tbody>
+                </tbody>
                 </table>
 
-                <p style="font-size: 14px;" class="card-title  text-center font-weight-bold mt-2">Keterangan</p>
 
+            </div>
+            </div>
 
-                </div>
+            <div id="collapseNine" class="collapse " aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="container">
 
-                <div id="collapseSeven" class="collapse " aria-labelledby="headingSeven" data-parent="#accordionExample">
-                <div class="container">
+                <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">HBU Analyzer</p>
 
-                    <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Lokasi</p>
-
-                    <div style="margin-top: 15px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
-                    <div class="col-md-7">
-                        <div class="form-group input-group-sm">
-                        <select class="form-control" style="margin-left: 10px;">
-                            <option>Skala1</option>
-                            <option>Skala2</option>
-                            <option>Skala2</option>
-
-                        </select>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div style="margin-top: -5px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Kegiatan</label></div>
-                    <div class="col-md-7 text_all">
-                        <textarea style="margin-left: 10px;" name="" id="" cols="23" rows="2"></textarea>
-                    </div>
-                    </div>
-
-                    <div style="margin-top: 5px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Sektor Input</label></div>
-                    <div class="col-md-7 text_all">
-                        <textarea style="margin-left: 10px;" name="" id="" cols="23" rows="2"></textarea>
-                    </div>
-                    </div>
-
-                    <div style="margin-top: 6px;" class="row ml-1">
-                    <div class="col-md-4 text_all"><label>Skala Usaha</label></div>
-                    <div class="col-md-7">
-                        <div class="form-group input-group-sm">
-                        <select style="margin-left: 10px;" class="form-control">
-                            <option>Skala1</option>
-                            <option>Skala2</option>
-                        </select>
-                        </div>
-                    </div>
-                    </div>
-
-
-                </div>
-
-                <table style="margin:0;" class="table table-borderless mt-1">
-                    <thead>
+                <table style="margin-top: 18px;" class="table table-hover">
+                <thead>
                     <tr>
-                        <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
-                        <th class="text_all text-center">Kegiatan</th>
-                        <th class="text_all text-center">Resiko</th>
-                        <th class="text_all text-center">ITBX</th>
+                    <th class="text_all">Kode</th>
+                    <th class="text_all">KBLI</th>
+                    <th class="text_all">ITBX</th>
                     </tr>
-                    </thead>
-                    <tbody>
+                </thead>
+                <tbody>
                     <tr>
-                        <td class="text_all text-center" style="width:30%;">13472</td>
-                        <td class="text_all text-center">Perdagangan Kue Basah</td>
-                        <td class="text_all text-center">Menengah</td>
-                        <td class="text_all text-center">Bersyarat</td>
-
+                    <td class="text_all">1</td>
+                    <td class="text_all">Example1</td>
+                    <td class="text_all">Example1</td>
                     </tr>
-                    </tbody>
+                </tbody>
                 </table>
 
-                <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Keterangan</p>
 
-
-                </div>
-
-                <div id="collapseEight" class="collapse " aria-labelledby="headingEight" data-parent="#accordionExample">
-                <div class="container">
-
-                    <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">Kalkulator</p>
-
-                    <table style="margin-top: 18px;" class="table table-hover">
-                    <thead>
-                        <tr>
-                        <th class="text_all">Kode</th>
-                        <th class="text_all">KBLI</th>
-                        <th class="text_all">ITBX</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td class="text_all">1</td>
-                        <td class="text_all">Example1</td>
-                        <td class="text_all">Example1</td>
-                        </tr>
-                    </tbody>
-                    </table>
-
-
-                </div>
-                </div>
-
-                <div id="collapseNine" class="collapse " aria-labelledby="headingEight" data-parent="#accordionExample">
-                <div class="container">
-
-                    <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">HBU Analyzer</p>
-
-                    <table style="margin-top: 18px;" class="table table-hover">
-                    <thead>
-                        <tr>
-                        <th class="text_all">Kode</th>
-                        <th class="text_all">KBLI</th>
-                        <th class="text_all">ITBX</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <td class="text_all">1</td>
-                        <td class="text_all">Example1</td>
-                        <td class="text_all">Example1</td>
-                        </tr>
-                    </tbody>
-                    </table>
-
-
-                </div>
-                </div>
-
-
+            </div>
             </div>
 
 
-            </div>
-        </div>
         </div>
 
-            <div id='map' style='width: 100%; height: 100%; position: absolute;'>
-
-
-            </div>
-
-
-    <div class="detail_omzet">
-        <div class="container">
-        <strong class="text_all">Detail Omzet</strong>
-        <div class="text_all">
-            <div><span class="details_omzet" style="background-color: rgb(255, 237, 160);"></span><span>0-4M</span></div>
-            <div><span class="details_omzet" style="background-color: rgb(255, 230, 117);"></span><span>5M-8M</span></div>
-            <div><span class="details_omzet" style="background-color: rgb(255, 223, 82);"></span><span>9M-12M</span></div>
-            <div><span class="details_omzet" style="background-color: rgb(255, 214, 31);"></span><span>13M-16M</span></div>
-            <div><span class="details_omzet" style="background-color: rgb(224, 183, 0);"></span><span>17M-20M</span></div>
-            <div><span class="details_omzet" style="background-color: rgb(202, 165, 2);"></span><span>&gt; 20M</span></div>
-        </div>
-        </div>
-    </div>
-
-    <div class="detail_jumlah">
-        <div class="container">
-        <strong class="text_all">Detail Omzet</strong>
-
-        <div class="text_all">
-                <div>Kelurahan : Menteng</div>
-                <p class="mb-0">
-                    <strong><em>Rp 5.110.507.000</em></strong>
-                </p>
-        </div>
 
         </div>
     </div>
+    </div>
+
+        <div id='map' style='width: 100%; height: 100%; position: absolute;'>
+
+
+        </div>
+
+
+<div class="detail_omzet">
+    <div class="container">
+    <strong class="text_all">Detail Omzet</strong>
+    <div class="text_all">
+        <div><span class="details_omzet" style="background-color: rgb(255, 237, 160);"></span><span>0-4M</span></div>
+        <div><span class="details_omzet" style="background-color: rgb(255, 230, 117);"></span><span>5M-8M</span></div>
+        <div><span class="details_omzet" style="background-color: rgb(255, 223, 82);"></span><span>9M-12M</span></div>
+        <div><span class="details_omzet" style="background-color: rgb(255, 214, 31);"></span><span>13M-16M</span></div>
+        <div><span class="details_omzet" style="background-color: rgb(224, 183, 0);"></span><span>17M-20M</span></div>
+        <div><span class="details_omzet" style="background-color: rgb(202, 165, 2);"></span><span>&gt; 20M</span></div>
+    </div>
+    </div>
+</div>
+
+<div class="detail_jumlah">
+    <div class="container">
+    <strong class="text_all">Detail Omzet</strong>
+
+    <div class="text_all">
+            <div>Kelurahan : Menteng</div>
+            <p class="mb-0">
+                <strong><em>Rp 5.110.507.000</em></strong>
+            </p>
+    </div>
+
+    </div>
+</div>
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="assets/js/jquery-3.3.1.slim.min.js" rel="preload"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.3.1.slim.min.js" rel="preload"></script>
 
-        <script src="assets/js/popper.min.js" rel="preload"></script>
+    <script src="assets/js/popper.min.js" rel="preload"></script>
 
-        <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-        <script src="assets/js/bootstrap.min.js" rel="preload"></script>
-        <script src="assets/js/Chart.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <script src="assets/js/bootstrap.min.js" rel="preload"></script>
+    <script src="assets/js/Chart.min.js"></script>
 
-        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-        <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
-        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
 
-        <script>
-            new Chart(document.getElementById("pie-chart"), {
-            type: 'pie',
-            data: {
-                labels: ["Kel A", "Kel B", "Kel C"],
-                datasets: [{
-                label: "Kelurahan",
-                backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                data: [478, 267, 734]
-                }]
+    <script>
+        new Chart(document.getElementById("pie-chart"), {
+        type: 'pie',
+        data: {
+            labels: ["Kel A", "Kel B", "Kel C"],
+            datasets: [{
+            label: "Kelurahan",
+            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+            data: [478, 267, 734]
+            }]
+        },
+        options: {
+            title: {
+            display: true
+            }
+        }
+        });
+
+
+        new Chart(document.getElementById("bar-chart-grouped"), {
+        type: 'bar',
+        data: {
+            labels: ["1900", "1950", "1999", "2050"],
+            datasets: [{
+            label: "Kecamatan A",
+            backgroundColor: "#3e95cd",
+            data: [133, 221, 783, 478]
+            }, {
+            label: "Kecamatan B",
+            backgroundColor: "#8e5ea2",
+            data: [832, 447, 175, 534]
+            }]
+        },
+        options: {
+            title: {
+            display: true,
+            text: 'Jumlah'
+            }
+        }
+        });
+    </script>
+
+
+    <script>
+        var kilometer = $('#ControlRange').val() / 1000;
+        $('#OutputControlRange').html(kilometer + ' Km');
+        $(document).on('input change', '#ControlRange', function() {
+        var kilometer = $(this).val() / 1000;
+        $('#OutputControlRange').html(kilometer + ' Km');
+        });
+
+        var selector = '.menu_active .tombol_menu';
+
+        $(selector).on('click', function() {
+        $(selector).removeClass('active');
+        $(this).addClass('active');
+        });
+
+        $('#hide_side_bar').click(function() {
+        $('#sidebar').hide();
+        $('#show_side_bar').css('display', 'block');
+        $(this).hide();
+        });
+        $('#show_side_bar').click(function() {
+        $('#sidebar').show();
+        $('#hide_side_bar').css('display', 'block');
+        $(this).hide();
+        });
+
+
+        $(document).ready(function() {
+        $(".aktip").each(function() {
+            $(this).addClass("active");
+        })
+        });
+
+    </script>
+
+    <!-- MAP BOX -->
+    <script>
+
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWVudGhvZWxzciIsImEiOiJja3M0MDZiMHMwZW83MnVwaDZ6Z2NhY2JxIn0.vQFxEZsM7Vvr-PX3FMOGiQ';
+        const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/menthoelsr/ckp4wrapq11m117pf2lr49l5t',
+        });
+
+        map.on('load', () => {
+        const layers = map.getStyle().layers;
+        // Find the index of the first symbol layer in the map style
+        let firstSymbolId;
+        for (const layer of layers) {
+            if (layer === ' ') {
+            firstSymbolId = layer.id;
+            break;
+            }
+        }
+
+        map.addSource('wilayah', {
+            'type': 'geojson',
+            'data': 'http://103.214.112.123:3000/choro'
+        });
+        map.addLayer({
+            'id': 'wilayah-fill',
+            'type': 'fill',
+            'source': 'wilayah',
+            'paint': {
+                'fill-color': [
+                "interpolate",
+                ["linear"],
+                ["get", "Total omzet"],
+                0,
+                "#ffeda0",
+                5000000000,
+                "#ffe675",
+                9000000000,
+                "#ffdf52",
+                13000000000,
+                "#ffd61f",
+                17000000000,
+                "#e0b700",
+                20396854609,
+                "#caa502"
+                ],
+                'fill-opacity': 0.7,
+                'fill-outline-color': 'red'
             },
-            options: {
-                title: {
-                display: true
-                }
+            'layout': {
+                'visibility': 'visible'
             }
-            });
 
-
-            new Chart(document.getElementById("bar-chart-grouped"), {
-            type: 'bar',
-            data: {
-                labels: ["1900", "1950", "1999", "2050"],
-                datasets: [{
-                label: "Kecamatan A",
-                backgroundColor: "#3e95cd",
-                data: [133, 221, 783, 478]
-                }, {
-                label: "Kecamatan B",
-                backgroundColor: "#8e5ea2",
-                data: [832, 447, 175, 534]
-                }]
             },
-            options: {
-                title: {
-                display: true,
-                text: 'Jumlah'
-                }
-            }
-            });
-        </script>
-
-
-        <script>
-            var kilometer = $('#ControlRange').val() / 1000;
-            $('#OutputControlRange').html(kilometer + ' Km');
-            $(document).on('input change', '#ControlRange', function() {
-            var kilometer = $(this).val() / 1000;
-            $('#OutputControlRange').html(kilometer + ' Km');
-            });
-
-            var selector = '.menu_active .tombol_menu';
-
-            $(selector).on('click', function() {
-            $(selector).removeClass('active');
-            $(this).addClass('active');
-            });
-
-            $('#hide_side_bar').click(function() {
-            $('#sidebar').hide();
-            $('#show_side_bar').css('display', 'block');
-            $(this).hide();
-            });
-            $('#show_side_bar').click(function() {
-            $('#sidebar').show();
-            $('#hide_side_bar').css('display', 'block');
-            $(this).hide();
-            });
-
-
-            $(document).ready(function() {
-            $(".aktip").each(function() {
-                $(this).addClass("active");
-            })
-            });
-
-        </script>
-
-        <!-- MAP BOX -->
-        <script>
-
-
-            mapboxgl.accessToken = 'pk.eyJ1IjoibWVudGhvZWxzciIsImEiOiJja3M0MDZiMHMwZW83MnVwaDZ6Z2NhY2JxIn0.vQFxEZsM7Vvr-PX3FMOGiQ';
-            const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/menthoelsr/ckp4wrapq11m117pf2lr49l5t',
-            });
-
-            map.on('load', () => {
-            const layers = map.getStyle().layers;
-            // Find the index of the first symbol layer in the map style
-            let firstSymbolId;
-            for (const layer of layers) {
-                if (layer === ' ') {
-                firstSymbolId = layer.id;
-                break;
-                }
-            }
-
-            map.addSource('wilayah', {
-                'type': 'geojson',
-                'data': 'http://103.214.112.123:3000/choro'
-            });
-            map.addLayer({
-                'id': 'wilayah-fill',
-                'type': 'fill',
-                'source': 'wilayah',
-                'paint': {
-                    'fill-color': [
-                    "interpolate",
-                    ["linear"],
-                    ["get", "Total omzet"],
-                    0,
-                    "#ffeda0",
-                    5000000000,
-                    "#ffe675",
-                    9000000000,
-                    "#ffdf52",
-                    13000000000,
-                    "#ffd61f",
-                    17000000000,
-                    "#e0b700",
-                    20396854609,
-                    "#caa502"
-                    ],
-                    'fill-opacity': 0.7,
-                    'fill-outline-color': 'red'
-                },
-                'layout': {
-                    'visibility': 'visible'
-                }
-
-                },
-                firstSymbolId
-            );
-            });
+            firstSymbolId
+        );
+        });
 
 
 
 
-            const draw = new MapboxDraw({
-            displayControlsDefault: false,
-            controls: {
-                polygon: true,
-                trash: true
-            }
-            });
-            map.addControl(new mapboxgl.NavigationControl());
+        const draw = new MapboxDraw({
+        displayControlsDefault: false,
+        controls: {
+            polygon: true,
+            trash: true
+        }
+        });
+        map.addControl(new mapboxgl.NavigationControl());
 
-            map.addControl(draw);
+        map.addControl(draw);
 
-            map.on('draw.create');
-            map.on('draw.delete');
-            map.on('draw.update');
-        </script>
+        map.on('draw.create');
+        map.on('draw.delete');
+        map.on('draw.update');
+    </script>
 
 
 
 
 
-    </body>
+</body>
 
-    </html>
+</html>
