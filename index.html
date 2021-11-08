@@ -174,14 +174,14 @@
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
                                 <a style="padding:9px;" class=" btn btn-outline-primary btn-md tombol_menu" id="kblikeg-tab" data-toggle="pill" href="#pills-kblikeg" role="tab" aria-controls="pills-kblikeg" aria-selected="false"><i class="ri-user-search-fill"></i></a>
                                 <br>
-                                <label style="margin-top: 8px;" class="size_menu">KBLI Kegiatan</label>
+                                <label style="margin-top: 8px;" class="size_menu">Kode KBLI</label>
                             </li>
 
-                            <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
+                            <!-- <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
                                 <a style="padding:9px;" class="btn  btn-outline-primary btn-md tombol_menu" id="kblilok-tab" data-toggle="pill" href="#pills-kblilok" role="tab" aria-controls="pills-kblilok" aria-selected="false"><i class="ri-user-search-fill"></i></a>
                                 <br>
                                 <label style="margin-top: 8px;" class="size_menu">KBLI Lokasi</label>
-                            </li>
+                            </li> -->
 
                             <!-- <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
                                 <a style="padding:9px;" class="btn btn-outline-primary btn-md tombol_menu" id="kalkulator-tab" data-toggle="pill" href="#pills-kalkulator" role="tab" aria-controls="pills-kalkulator" aria-selected="false"><i class="ri-calculator-fill"></i></a>
@@ -608,9 +608,20 @@
 
                     <div class="tab-pane " id="pills-kblikeg" role="tabpanel" aria-labelledby="kblikeg-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Kegiatan</p>
+                            <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Kode KBLI</p>
 
                             <div style="margin-top: 15px;" class="row ml-1">
+                                <div class="col-md-5 text_all"><label>Cari berdasarkan</label></div>
+                                <div class="col-md-7 text_all">
+                                    <div class="form-check" style="margin-left: -18px;">
+                                        <input class="form-check-input" type="radio" name="kegiatan"  value="Kegiatan" >Kegiatan
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="lokasi"  value="Lokasi" >Lokasi
+                                    </div>
+                                </div>
+                        </div>
+
+                            <div style="margin-top: 3px;" class="row ml-1">
                                 <div class="col-md-4 text_all"><label>Kegiatan</label></div>
                                 <div class="col-md-7 text_all">
                                     <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
@@ -650,16 +661,7 @@
                             </div>
 
 
-                            <div style="margin-top: -7px;" class="row ml-1">
-                                <div class="col-md-5 text_all"><label>Cari berdasarkan</label></div>
-                                <div class="col-md-7 text_all">
-                                    <div class="form-check" style="margin-left: -18px;">
-                                        <input class="form-check-input" type="radio" name="kegiatan"  value="Kegiatan" >Kegiatan
-                                        <br>
-                                        <input class="form-check-input" type="radio" name="lokasi"  value="Lokasi" >Lokasi
-                                    </div>
-                                </div>
-                        </div>
+
 
 
                         </div>
@@ -687,7 +689,7 @@
                         <p style="font-size: 14px;" class="card-title  text-center font-weight-bold mt-2">Keterangan</p>
                     </div>
 
-                    <div class="tab-pane" id="pills-kblilok" role="tabpanel" aria-labelledby="kblilok-tab">
+                    <!-- <div class="tab-pane" id="pills-kblilok" role="tabpanel" aria-labelledby="kblilok-tab">
                         <div class="container">
                             <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Lokasi</p>
 
@@ -765,7 +767,7 @@
                         </table>
 
                         <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Keterangan</p>
-                    </div>
+                    </div> -->
 
                     <!-- <div class="tab-pane" id="pills-kalkulator" role="tabpanel" aria-labelledby="kalkulator-tab">
                         <div class="container">
