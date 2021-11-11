@@ -6,6 +6,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+.TextHead {
+  font-size: 13pt;
+  letter-spacing: .7px;
+  vertical-align: middle;
+  font-weight: 500;
+}
+
 .form-control-file, .form-control-range{
   width: 98% !important;
 }
@@ -64,7 +71,7 @@
   z-index: 999;
   height: 60px;
   width: 20px;
-  background-color: #fdfffc;
+  background-color: #FFFFFF;
 }
 
 
@@ -82,7 +89,7 @@
   z-index: 999;
   height: 60px;
   width: 20px;
-  background-color: #fdfffc;
+  background-color: #FFFFFF;
 }
 
 .btn_icon_show {
@@ -115,7 +122,7 @@
 }
 
 .color_card_body {
-  background-color: #fdfffc;
+  background-color: #FFFFFF;
 }
 
 .layout_checkbox {
@@ -173,7 +180,7 @@
 }
 
 .text_poi2{
-  background-color: #fdfffc;
+  background-color: #FFFFFF;
   margin-top:-25px;
   margin-left: -15px;
 }
@@ -196,11 +203,6 @@ textarea {
   border: none;
   outline: none;
   resize: none;
-}
-
-.HeadText{
-  font-size: 13pt;
-  vertical-align: middle;
 }
 
 
@@ -227,7 +229,7 @@ textarea {
   position: absolute;
   width: 60px;
   width: 160px;
-  background-color: #fdfffc;
+  background-color: #FFFFFF;
 }
 
 .details_omzet {
@@ -246,7 +248,7 @@ textarea {
   z-index: 999;
   width: 60px;
   width: 160px;
-  background-color: #fdfffc;
+  background-color: #FFFFFF;
 }
 
 #map {
@@ -326,6 +328,8 @@ input[type=range]:focus::-moz-range-track {
 }
 
 /* Finish Range */
+
+
 
 
 
