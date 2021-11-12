@@ -1,14 +1,22 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100&display=swap'); */
 
+/* * {
+  font-family: "Roboto", sans-serif;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
 * {
-    /* margin: 0; */
-    /* padding: 0; */
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat';
   }
 
   .TextHead {
-    color: #FFFFFF;
+    padding-right: 5%;
+    color: #414042;
     font-size: 13pt;
+    font-weight: bold;
     letter-spacing: .7px;
     vertical-align: middle;
     font-weight: 500;
@@ -256,7 +264,9 @@
 
   .detail_omzet{
     border-radius: 5px;
-    right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 1%;
     bottom: 1.5rem;
     position: absolute;
     width: 60px;
@@ -275,8 +285,9 @@
 
   .detail_jumlah{
     border-radius: 5px;
-
-    right: 18%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 14%;
     bottom: 1.5rem;
     position: absolute;
     z-index: 999;
@@ -552,38 +563,140 @@ background-color: #135180;
 }
 
 .fa-map-marker{
-  color: #FFFFFF;
+  color: #F7941D;
 }
 
 .ri-funds-box-fill{
-  color: #FFFFFF;
+  color: #F7941D;
 }
 
 .ri-map-2-fill{
-  color: #FFFFFF;
+  color: #F7941D;
 }
 
 .ri-home-4-fill{
-  color: #FFFFFF;
+  color: #F7941D;
 }
 
 .fa-crosshairs{
-  color: #FFFFFF;
+  color: #F7941D;
 }
 
 .ri-user-search-fill{
-  color: #FFFFFF;
+  color: #F7941D;
 }
 
-.fa-free-code-camp:before {
-  color: #FFFFFF;
+.la-exclamation-circle {
+  color: #FFFFFF !important;
 }
 
-.fa-eercast:before {
-  color: #FFFFFF;
+.la-layer-group {
+  color: #FFFFFF !important;
+}
+
+.kotak_judul{
+  width: 100%;
+  height: 25%;
+  background-color: #FFFFFF;
+}
+
+.name_kotak{
+  margin-top: -8px;
+  padding-top: 3px;
+  padding-left: 27px;
+  border-radius: 30px;
+  width: 91%;
+  height: 30px;
+  background-color: #0956C6;
 }
 
 
+/* SEARCH BARU */
+.tempat_search{
+  position: relative;
+	width: 300px;
+  margin-top: 58px;
+  /* margin-left: 50px; */
+}
+
+.tempat_search .search_box{
+	position: relative;
+	width: 350px;
+	height: 40px;
+}
+
+.tempat_search .search_box .input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 70px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+.tempat_search .search_box .btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 100%;
+	background: #F7941D;
+	z-index: 1;
+	cursor: pointer;
+}
+
+
+.tempat_search .search_box{
+	position: absolute;
+	/* top: 25%; */
+	left: 68%;
+	transform: translate(-50%,-50%);
+	/* color: #fff;
+	font-size: 20px; */
+}
+
+.tempat_search.searchh .search_box .input{
+	border-radius: 50px;
+  /* border: 2px solid #135180; */
+  border: none;
+}
+
+/* .tempat_search.searchh .search_box .input[type="text"]:focus{
+  outline: none;
+} */
+
+.tempat_search .search_box .btn{
+	width: 35px;
+	height: 35px;
+	top: 3px;
+	right: 4px;
+	border-radius: 3px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.tempat_search.searchh .search_box .btn{
+	border-radius: 25px;
+}
+
+.tempat_search.searchh .search_box .input{
+	padding-right: 50px;
+}
+
+
+.kotak_base_map{
+  width: 100%;
+  height: 30px;
+  background-color: #FFFFFF;
+  padding-top: 5px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
 
 
 
