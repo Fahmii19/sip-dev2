@@ -10,6 +10,7 @@
 
     <link rel="icon" href="assets/gambar/favicon.ico">
 
+
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
@@ -18,13 +19,17 @@
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/remix-icon/remixicon.css">
 
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
     <!-- MAPBOX -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
 
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css" type="text/css">
 
     <!-- custom -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom_baru.css">
+    <link rel="stylesheet" href="assets/css/data.css">
+
 
 </head>
 
@@ -41,33 +46,55 @@
         <i class="btn_icon_show ri-arrow-right-s-fill fa-2x"></i>
     </button>
 
+    <!-- KONTEN -->
     <div class="pembungkus" id="sidebar">
         <div class="dalam">
 
-
-
-            <div style="background-color: #FFFFFF;" class="card-header p-0">
-                <div class="text-center pt-2 pb-2">
-                    <img src="assets/gambar/logo_jakpintas.png" width="55px" style="margin-left: -20px;margin-right: 10px;">
-                    <span class="TextHead">Peta Perijinan dan Investasi</span>
-            </div></div>
-
+            <div class="kotak_judul">
+                <div class="dalam_kotakjudul">
+                    <div>
+                        <div class="text-center pt-2 pb-2">
+                            <img src="assets/gambar/logo_jakpintas.png" width="70px">
+                        </div>
+                    </div>
+                    <div>
+                        <p><span class="TextHead font-weight-bold">Peta Perijinan dan Investasi</span></p>
+                        <div class="name_kotak">
+                            <p style="font-size: 15px; color: #FFFFFF;">Smart City, Smart Province</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="card-body color_card_body">
 
-                <!-- Search -->
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <div class="input-group input-group-md mb-1">
-                            <input type="search" id="example-search-input" class="form-control tombol_search py-2 border-right-0 border" placeholder="Cari nama jalan ...">
-                            <span class="input-group-append">
-                                <button class="btn btn-outline-secondary tombol_search border-left-0 border" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                        </div>
+                        <div class="tempat_search searchh">
+                            <div class="search_box">
+                                <span class="menu">
+                                    <button class="btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="las la-bars"></i>
+                                    </button>
 
+                                    <!-- silent dropdown -->
+                                    <!-- <div class="dropdown-menu" style="background-color: #117A96; width:870%;">
+                                        <a class="dropdown-item" href="#"><i class="las la-link"></i> Bagikan</a>
+                                        <a class="dropdown-item" href="#"><i class="las la-expand"></i> Sematkan Peta</a>
+                                        <a class="dropdown-item" href="#"><i class="las la-comment"></i> Kirim Masukan</a>
+                                        <a class="dropdown-item" href="#"><i class="las la-print"></i> Cetak</a>
+                                        <a class="dropdown-item" href="#"><i class="las la-question-circle"></i> Bantuan action</a>
+                                    </div> -->
+                                </span>
+
+                                <input type="text" class="input" placeholder="Cari kelurahan disini...">
+
+                                <span class="btn-search">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -123,59 +150,56 @@
 
                 <!-- Range Inputs -->
                 <div class="form-group w-100 mt-3 mb-0 ml-2" id="radiusSlide">
-                    <label style="font-size: 13px;" class="font-weight-bold" for="formControlRange">Radius</label>
-                    <label style="font-size: 13px;" class="font-weight-bold" id="OutputControlRange">0 Km</label>
+                    <label style="font-size: 13px; color: #FFFFFF;" for="formControlRange">Radius</label>
+                    <label style="font-size: 13px; color: #FFFFFF;" id="OutputControlRange">0 Km</label>
 
                     <input type="range" style="height: 6px;" class="form-control-range" id="ControlRange" min="500" max="3000" step="500" value="1000">
 
                 </div>
 
-                <div style="margin-top:19px; margin-bottom:19px;" class="text-right text_all">
-                    <a href="#" title="Menggunakan Bahasa Indonesia">Bahasa</a> | <a href="en" title="Menggunakan Bahasa Inggris">English</a>
+                <div class="text-right pos_lang text_all">
+                    <a href="#" class="languange" title="Menggunakan Bahasa Indonesia">Bahasa</a> | <a href="#" class="languange" title="Menggunakan Bahasa Inggris">English</a>
                 </div>
 
                 <hr>
 
                 <!-- Menu -->
-
-                <div class="container" style="margin-left: 0.5%; margin-top:2%; margin-bottom: -2%;">
-
+                <div class="container pos_container_menu">
                     <div class="flex-container">
-
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:7px;" class="active aktip btn btn-outline-primary btn-md tombol_menu" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab" aria-controls="pills-lokasi" aria-selected="true"><i class="fa fa-map-marker"></i></a>
+                                <a style="padding:7px;" class="btn active btn-outline-light btn-md tombol_menu" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab" aria-controls="pills-lokasi" aria-selected="true"><i class="fa fa-map-marker"></i></a>
                                 <br>
                                 <label class="size_menu">Lokasi</label>
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:7px;" class="btn btn-outline-primary btn-md tombol_menu" id="ekonomi-tab" data-toggle="pill" href="#pills-ekonomi" role="tab" aria-controls="pills-ekonomi" aria-selected="false"><i class="ri-funds-box-fill"></i></a>
+                                <a style="padding:7px;" class="btn  btn-outline-light btn-md tombol_menu" id="ekonomi-tab" data-toggle="pill" href="#pills-ekonomi" role="tab" aria-controls="pills-ekonomi" aria-selected="false"><i class="ri-funds-box-fill"></i></a>
                                 <br>
                                 <label class="size_menu">Ekonomi</label>
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class="btn btn-outline-primary btn-md tombol_menu" id="zonasi-tab" data-toggle="pill" href="#pills-zonasi" role="tab" aria-controls="pills-zonasi" aria-selected="false"><i class="ri-map-2-fill"></i></a>
+                                <a style="padding:9px;" class="btn btn-outline-light btn-md tombol_menu" id="zonasi-tab" data-toggle="pill" href="#pills-zonasi" role="tab" aria-controls="pills-zonasi" aria-selected="false"><i class="ri-map-2-fill"></i></a>
                                 <br>
                                 <label class="size_menu">Zonasi</label>
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class="btn btn-outline-primary btn-md tombol_menu" id="persil-tab" data-toggle="pill" href="#pills-persil" role="tab" aria-controls="pills-persil" aria-selected="false"><i class="ri-home-4-fill"></i></a>
+                                <a style="padding:9px;" class="btn btn-outline-light btn-md tombol_menu" id="persil-tab" data-toggle="pill" href="#pills-persil" role="tab" aria-controls="pills-persil" aria-selected="false"><i class="ri-home-4-fill"></i></a>
                                 <br>
                                 <label class="size_menu">Persil</label>
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class="btn btn-outline-primary btn-md tombol_menu" id="poi-tab" data-toggle="pill" href="#pills-poi" role="tab" aria-controls="pills-poi" aria-selected="false"><i class="fa fa-crosshairs"></i></a>
+                                <a style="padding:9px;" class="btn  btn-outline-light btn-md tombol_menu" id="poi-tab" data-toggle="pill" href="#pills-poi" role="tab" aria-controls="pills-poi" aria-selected="false"><i class="fa fa-crosshairs"></i></a>
                                 <br>
                                 <label class="size_menu">POI</label>
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class=" btn btn-outline-primary btn-md tombol_menu" id="kblikeg-tab" data-toggle="pill" href="#pills-kblikeg" role="tab" aria-controls="pills-kblikeg" aria-selected="false"><i class="ri-user-search-fill"></i></a>
+                                <a style="padding:9px;" class=" btn btn-outline-light btn-md tombol_menu" id="kblikeg-tab" data-toggle="pill" href="#pills-kblikeg" role="tab" aria-controls="pills-kblikeg" aria-selected="false"><i class="ri-user-search-fill"></i></a>
                                 <br>
                                 <label style="margin-top: 8px;" class="size_menu">Kode KBLI</label>
                             </li>
@@ -199,7 +223,6 @@
                             </li> -->
 
                         </ul>
-
                     </div>
                 </div>
 
@@ -207,9 +230,10 @@
 
                 <!-- Isi Menu -->
                 <div class="tab-content" id="pills-tabContent">
+
                     <div class="tab-pane show active" id="pills-lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Info Lokasi</p>
+                            <p class="card-title mt-2 text-center judul_isi_menu font-weight-bold">Info Lokasi</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text_all"><label>Koordinat</label></div>
@@ -280,9 +304,9 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane" id="pills-ekonomi" role="tabpanel" aria-labelledby="ekonomi-tab">
+                    <div class="tab-pane " id="pills-ekonomi" role="tabpanel" aria-labelledby="ekonomi-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Usaha Mikro Kecil</p>
+                            <p class="card-title mt-2 judul_isi_menu text-center font-weight-bold">Usaha Mikro Kecil</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text_all"><label>Pelaku Usaha</label></div>
@@ -298,7 +322,7 @@
                                 </div>
 
                                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 offset-2">
-                                    <p style="font-size: 14px; margin-bottom:-24px; margin-left: -20px;" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
+                                    <p style="font-size: 14px; margin-bottom:-24px; margin-left: -20px; color:#FFFFFF" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
                                     <canvas id="pie-chart" width="37" height="50">
 
                                     </canvas>
@@ -310,7 +334,7 @@
 
                             </div>
 
-                            <p style="font-size: 14px;" class="card-title mb-3 mt-3  text-center font-weight-bold">Pendapatan Rata-Rata Per Bulan</p>
+                            <p class="card-title mb-3 mt-3 judul_isi_menu text-center font-weight-bold">Pendapatan Rata-Rata Per Bulan</p>
 
                             <div class="row space_judul" style="margin-left:15px;">
 
@@ -388,7 +412,7 @@
 
                     <div class="tab-pane" id="pills-zonasi" role="tabpanel" aria-labelledby="zonasi-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Zonasi</p>
+                            <p class="card-title mt-2 text-center judul_isi_menu font-weight-bold">Zonasi</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-md-5 text_all"><label>Nama Usaha</label></div>
@@ -417,7 +441,7 @@
 
                     <div class="tab-pane" id="pills-persil" role="tabpanel" aria-labelledby="persil-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Persil</p>
+                            <p class="card-title mt-2 judul_isi_menu text-center font-weight-bold">Persil</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-md-5 text_all"><label>Lahan Eksisting</label></div>
@@ -494,15 +518,15 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane" id="pills-poi" role="tabpanel" aria-labelledby="poi-tab">
+                    <div class="tab-pane " id="pills-poi" role="tabpanel" aria-labelledby="poi-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">POI</p>
+                            <p class="card-title mt-2 text-center judul_isi_menu font-weight-bold">POI</p>
 
                             <div class="accordion" id="PoiCollabse" style="margin-top: 14px;">
                                 <div class="row row_mid_judul2">
                                     <div class="col-md-12 flex-column">
-                                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiOne" aria-expanded="true" aria-controls="collapsePoiOne">
-                                            <b>Minimarket</b>
+                                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_poi" data-toggle="collapse" data-target="#collapsePoiOne" aria-expanded="true" aria-controls="collapsePoiOne" style="margin-left: -3px;">
+                                            <span class="font-weight-bold">Minimarket</span>
                                         </button>
                                     </div>
                                 </div>
@@ -537,8 +561,8 @@
 
                                 <div class="row row_mid_judul">
                                     <div class="col-md-12 flex-column">
-                                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiTwo" aria-expanded="true" aria-controls="collapsePoiTwo">
-                                            <b>Sekolah</b>
+                                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_poi" data-toggle="collapse" data-target="#collapsePoiTwo" aria-expanded="true" aria-controls="collapsePoiTwo" style="margin-left: -3px;">
+                                            <span class="font-weight-bold">Sekolah</span>
                                         </button>
                                     </div>
                                 </div>
@@ -573,8 +597,8 @@
 
                                 <div class="row row_mid_judul">
                                     <div class="col-md-12 flex-column">
-                                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_search" data-toggle="collapse" data-target="#collapsePoiThre" aria-expanded="true" aria-controls="collapsePoiThre">
-                                            <b>Hotel</b>
+                                        <button type="button" class="btn btn-md btn-block text-left text_all text_poi1 tombol_poi" data-toggle="collapse" data-target="#collapsePoiThre" aria-expanded="true" aria-controls="collapsePoiThre" style="margin-left: -3px;">
+                                            <span class="font-weight-bold">Hotel</span>
                                         </button>
                                     </div>
                                 </div>
@@ -611,7 +635,7 @@
 
                     <div class="tab-pane " id="pills-kblikeg" role="tabpanel" aria-labelledby="kblikeg-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Kode KBLI</p>
+                            <p class="card-title  mt-2 text-center judul_isi_menu font-weight-bold">Kode KBLI</p>
 
                             <div style="margin-top: 15px;" class="row ml-1">
                                 <div class="col-md-5 text_all">
@@ -620,50 +644,50 @@
                             </div>
 
 
-                        <div style="margin-top: -10px;" class="row ml-1">
+                            <div style="margin-top: -10px; margin-bottom:8px" class="row ml-1">
 
-                            <div class="col-md-7 text_all">
+                                <div class="col-md-7 text_all">
 
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                                         <label class="form-check-label" for="exampleRadios1">
-                                        Kegiatan
+                                            Kegiatan
                                         </label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
                                         <label class="form-check-label" for="exampleRadios2">
-                                        Lokasi
+                                            Lokasi
                                         </label>
                                     </div>
 
+                                </div>
+
+                                <div class="col-md-5"></div>
+
                             </div>
-
-                            <div class="col-md-5"></div>
-
-                    </div>
 
 
                             <div style="margin-top: 3px;" class="row ml-1">
-                                <div class="col-md-4 text_all"><label>Kegiatan</label></div>
-                                <div class="col-md-7 text_all">
-                                    <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text_all"><label>Kegiatan</label></div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text_all">
+                                    <textarea name="" style="margin-left: 10px;" id="" cols="25" rows="2"></textarea>
                                 </div>
                             </div>
 
-                            <div style="margin-top: -3px;" class="row ml-1">
-                                <div class="col-md-4 text_all"><label>Sektor</label></div>
-                                <div class="col-md-7 text_all">
-                                    <textarea name="" style="margin-left: 10px;" id="" cols="23" rows="2"></textarea>
+                            <div style="margin-top: 4px;" class="row ml-1">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text_all"><label>Sektor</label></div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text_all">
+                                    <textarea name="" style="margin-left: 10px;" id="" cols="25" rows="2"></textarea>
                                 </div>
                             </div>
 
 
                             <div style="margin-top: 5px;" class="row ml-1">
                                 <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <div class="form-group input-group-sm">
-                                        <select class="form-control" style="margin-left: 10px;">
+                                        <select class="form-control select_kode_kbli">
                                             <option>Skala1</option>
                                             <option>Skala2</option>
                                         </select>
@@ -673,9 +697,9 @@
 
                             <div style="margin-top: -5px;" class="row ml-1">
                                 <div class="col-md-4 text_all"><label>Skala Usaha</label></div>
-                                <div class="col-md-7">
+                                <div class="col-md-8">
                                     <div class="form-group input-group-sm">
-                                        <select class="form-control" style="margin-left: 10px;">
+                                        <select class="form-control select_kode_kbli">
                                             <option>Skala1</option>
                                             <option>Skala2</option>
                                         </select>
@@ -689,7 +713,7 @@
 
                         </div>
 
-                        <table style="margin:0;" class="table table-borderless mt-4">
+                        <table style="margin:0;" class="table table-borderless mt-4 table-kbli">
                             <thead>
                                 <tr>
                                     <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
@@ -709,7 +733,7 @@
                             </tbody>
                         </table>
 
-                        <p style="font-size: 14px;" class="card-title  text-center font-weight-bold mt-2">Keterangan</p>
+                        <p class="card-title judul_isi_menu text-center font-weight-bold mt-2">Keterangan</p>
                     </div>
 
                     <!-- <div class="tab-pane" id="pills-kblilok" role="tabpanel" aria-labelledby="kblilok-tab">
@@ -846,45 +870,127 @@
 
             </div>
 
-
         </div>
     </div>
-    <!-- </div> -->
 
+    <!-- PETA -->
     <div id='map' style='width: 100%; height: 100%; position: absolute;'>
 
-    </div>
+        <!-- Disclaimer -->
+        <div id="btn-disclaimer">
+            <button class="btn-layer wz-icon icon-top-bar las la-exclamation-circle fa-2x pull-right" type="button" data-toggle="modal" data-target="#disclaimerModal" title="Disclaimer Application">
+            </button>
+        </div>
 
-
-    <div class="detail_omzet">
-        <div class="container">
-            <strong class="text_all">Detail Omzet</strong>
-            <div class="text_all">
-                <div><span class="details_omzet" style="background-color: rgb(255, 237, 160);"></span><span>0-4M</span></div>
-                <div><span class="details_omzet" style="background-color: rgb(255, 230, 117);"></span><span>5M-8M</span></div>
-                <div><span class="details_omzet" style="background-color: rgb(255, 223, 82);"></span><span>9M-12M</span></div>
-                <div><span class="details_omzet" style="background-color: rgb(255, 214, 31);"></span><span>13M-16M</span></div>
-                <div><span class="details_omzet" style="background-color: rgb(224, 183, 0);"></span><span>17M-20M</span></div>
-                <div><span class="details_omzet" style="background-color: rgb(202, 165, 2);"></span><span>&gt; 20M</span></div>
+        <!-- Modal Disclaimer -->
+        <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title m-auto" id="disclaimerLabel" data-t>front.disclaimer.title</h5>
+                        <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body pl-0">
+                        <div style="font-size: 10pt;text-align: justify;">
+                            <ol>
+                                <li class="mb-2"><span>JAKPINTAS (Peta Perijinan dan Investasi DKI Jakarta) dikembangkan sebagai hasil kolaborasi antara Dinas Penanaman Modal dan Perizinan Terpadu Satu Pintu Pemerintah Provinsi DKI Jakarta (DPMPTSP DKI Jakarta) dan Ikatan Ahli Perencanaan (IAP) menggunakan peta dasar OpenStreetMap dan MapBox dengan tujuan menjadi panduan bagi masyarakat untuk mengambil keputusan investasi dengan membuka informasi ketataruangan, pertanahan, pembangunan gedung/bangunan, demografi dan perekonomian warga serta data dan informasi lain seluas-luasnya, meliputi:</span>
+                                    <ol>
+                                        <li>Peta zonasi dalam RDTR beserta PZ</li>
+                                        <li>Peta lahan eksisting</li>
+                                        <li>Peta persil BPN</li>
+                                        <li>Peta interpolasi NJOP 2021</li>
+                                        <li>Peta sebaran usaha mikro kecil</li>
+                                        <li>Peta sebaran pendapatan rata-rata penduduk berdasar survey Dasa Wisma</li>
+                                        <li>Peta sebaran minimarket</li>
+                                        <li>Peta sebaran sekolah</li>
+                                        <li>Peta sebaran pusat belanja dan makan</li>
+                                        <li>Peta sebaran hotel, apartemen, wisma dan penginapan</li>
+                                        <li>Peta sebaran tempat ibadah</li>
+                                        <li>Peta sebaran rumah sakit, klinik, puskesmas</li>
+                                        <li>Peta sebaran halte transit, bandara, pelabuhan, stasiun, terminal, SPBU</li>
+                                        <li>Peta sebaran gedung dan perkantoran</li>
+                                        <li>Fitur pencarian kode KBLI yang disesuaiakan dengan jenis kegiatan, skala dan zonasi usaha</li>
+                                    </ol>
+                                </li>
+                                <li class="mb-2">DPMPTSP DKI Jakarta dan IAP berkomitmen agar data dan informasi yang ada selalu diperbarui secara periodk, diperkaya dengan informasi terkini, dilengkapi dengan data-data tambahan dari pihak-pihak lain, serta terus disempurnakan akurasi dan ketelitiannya</li>
+                                <li class="mb-2">Warga masyarakat dapat berpartisipasi aktif dalam pengayaan sistem dengan cara memberi masukan, perbaikan, usulan, atau keberatan melalui input langsung di dalam sistem.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="detail_jumlah">
-        <div class="container">
-            <strong class="text_all">Detail Omzet</strong>
+        <!-- Base map -->
+        <div id="legend">
+            <div class="dropdown">
+                <button class="btn-layer wz-icon icon-top-bar las la-layer-group fa-2x pull-right" type="button" id="dropdownLayer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu keep-open" id="menu" aria-labelledby="dropdownLayer" style="font-size: 12px; margin-top: 5px; border: none; background-color: #117A96;">
+                    <li class="text-center" style="margin-bottom:10px; color: #FFFFFF;">Base Map</li>
 
-            <div class="text_all">
-                <div>Kelurahan : Menteng</div>
-                <p class="mb-0">
-                    <strong><em>Rp 5.110.507.000</em></strong>
-                </p>
+                    <div class="kotak_base_map">
+                        <li>
+                            <div class="form-check form-check-inline mr-5">
+                                <input style="height:20px;" class="form-check-input" type="radio" name="rtoggle" id="ckp4wrapq11m117pf2lr49l5t" value="ckp4wrapq11m117pf2lr49l5t" checked="checked">
+                                <label class="form-check-label pl-1" for="ckp4wrapq11m117pf2lr49l5t">Default</label>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="kotak_base_map">
+                        <li>
+                            <div class="form-check form-check-inline mr-5">
+                                <input style="height:20px;" class="form-check-input" type="radio" name="rtoggle" id="ckp6i54ay22u818lrq15ffcnr" value="ckp6i54ay22u818lrq15ffcnr">
+                                <label class="form-check-label pl-1" for="ckp6i54ay22u818lrq15ffcnr">Satellite</label>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="kotak_base_map">
+                        <li>
+                            <div class="form-check form-check-inline mr-5">
+                                <input style="height:20px;" class="form-check-input" type="radio" name="rtoggle" id="ckp6i6bgp2jn217pfp6wm5syk" value="ckp6i6bgp2jn217pfp6wm5syk">
+                                <label class="form-check-label pl-1" for="ckp6i6bgp2jn217pfp6wm5syk">Streets</label>
+                            </div>
+                        </li>
+                    </div>
+
+                </ul>
             </div>
-
         </div>
+
+        <!--  -->
+        <div class="detail_omzet">
+            <div class="container">
+                <div class="text_all">
+                    <div><span class="details_omzet" style="background-color: rgb(255, 237, 160);"></span><span>0-4M</span></div>
+                    <div><span class="details_omzet" style="background-color: rgb(255, 230, 117);"></span><span>5M-8M</span></div>
+                    <div><span class="details_omzet" style="background-color: rgb(255, 223, 82);"></span><span>9M-12M</span></div>
+                    <div><span class="details_omzet" style="background-color: rgb(255, 214, 31);"></span><span>13M-16M</span></div>
+                    <div><span class="details_omzet" style="background-color: rgb(224, 183, 0);"></span><span>17M-20M</span></div>
+                    <div><span class="details_omzet" style="background-color: rgb(202, 165, 2);"></span><span>&gt; 20M</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail_jumlah">
+            <div class="container">
+                <span class="text_all font-weight-bold">Detail Omzet</span>
+
+                <div class="text_all">
+                    <div>Kelurahan : Menteng</div>
+                    <p class="mb-0">
+                        <span><em>Rp 5.110.507.000</em></span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-
-
 
 
     <!-- Optional JavaScript -->
@@ -899,51 +1005,11 @@
 
     <script src="assets/js/Chart.min.js"></script>
 
+    <!-- Maps Box -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
 
-    <script>
-        new Chart(document.getElementById("pie-chart"), {
-            type: 'pie',
-            data: {
-                labels: ["Kel A", "Kel B", "Kel C"],
-                datasets: [{
-                    label: "Kelurahan",
-                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                    data: [478, 267, 734]
-                }]
-            },
-            options: {
-                title: {
-                    display: true
-                }
-            }
-        });
-
-
-        new Chart(document.getElementById("bar-chart-grouped"), {
-            type: 'bar',
-            data: {
-                labels: ["1900", "1950", "1999", "2050"],
-                datasets: [{
-                    label: "Kecamatan A",
-                    backgroundColor: "#3e95cd",
-                    data: [133, 221, 783, 478]
-                }, {
-                    label: "Kecamatan B",
-                    backgroundColor: "#8e5ea2",
-                    data: [832, 447, 175, 534]
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: 'Jumlah'
-                }
-            }
-        });
-    </script>
 
 
     <script>
@@ -972,13 +1038,21 @@
             $(this).hide();
         });
 
-
+        // class aktip
         $(document).ready(function() {
             $(".aktip").each(function() {
                 $(this).addClass("active");
             })
         });
+
+        function copyText() {
+            var copyText = document.getElementById("text-copy");
+            copyText.select();
+            document.execCommand("copy");
+        }
     </script>
+
+
 
     <!-- MAP BOX -->
     <script>
@@ -1037,9 +1111,6 @@
             );
         });
 
-
-
-
         const draw = new MapboxDraw({
             displayControlsDefault: false,
             controls: {
@@ -1055,6 +1126,76 @@
         map.on('draw.delete');
         map.on('draw.update');
     </script>
+
+
+
+
+    <!-- CHART -->
+    <script>
+        new Chart(document.getElementById("pie-chart"), {
+            type: 'pie',
+            data: {
+                labels: ["Kel A", "Kel B", "Kel C"],
+                datasets: [{
+                    label: "Kelurahan",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: [478, 267, 734],
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                },
+                legend: {
+                    labels: {
+                        fontColor: 'white'
+                    }
+                },
+            }
+        });
+
+        new Chart(document.getElementById("bar-chart-grouped"), {
+            type: 'bar',
+            data: {
+                labels: ["1900", "1950", "1999", "2050"],
+                datasets: [{
+                    label: "Kecamatan A",
+                    backgroundColor: "#3e95cd",
+                    data: [133, 221, 783, 478]
+                }, {
+                    label: "Kecamatan B",
+                    backgroundColor: "#8e5ea2",
+                    data: [832, 447, 175, 534]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Jumlah',
+                    fontColor: 'white'
+                },
+                legend: {
+                    labels: {
+                        fontColor: 'white'
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            fontColor: 'white'
+                        }
+                    }],
+                    xAxes: [{
+                        ticks: {
+                            fontColor: 'white'
+                        }
+                    }],
+                }
+            }
+        });
+    </script>
+
+
 
 
 
