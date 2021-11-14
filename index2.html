@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div>
-                        <p><span class="TextHead font-weight-bold">Peta Perijinan dan Investasi</span></p>
+                        <p><span class="TextHead lighter">Peta Perijinan dan Investasi</span></p>
                         <div class="name_kotak">
                             <p style="font-size: 15px; color: #FFFFFF;">Smart City, Smart Province</p>
                         </div>
@@ -70,33 +70,32 @@
 
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
                         <div class="tempat_search searchh">
                             <div class="search_box">
-                                <span class="menu">
-                                    <button class="btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="las la-bars"></i>
-                                    </button>
-
-                                    <!-- silent dropdown -->
-                                    <!-- <div class="dropdown-menu" style="background-color: #117A96; width:870%;">
-                                        <a class="dropdown-item" href="#"><i class="las la-link"></i> Bagikan</a>
-                                        <a class="dropdown-item" href="#"><i class="las la-expand"></i> Sematkan Peta</a>
-                                        <a class="dropdown-item" href="#"><i class="las la-comment"></i> Kirim Masukan</a>
-                                        <a class="dropdown-item" href="#"><i class="las la-print"></i> Cetak</a>
-                                        <a class="dropdown-item" href="#"><i class="las la-question-circle"></i> Bantuan action</a>
-                                    </div> -->
-                                </span>
 
                                 <input type="text" class="input" placeholder="Cari kelurahan disini...">
 
-                                <span class="btn-search">
+                                <div class="btn">
                                     <i class="fa fa-search"></i>
-                                </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Search -->
+                <!-- <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="input-group input-group-md mb-1">
+                            <input type="search" id="example-search-input" class="form-control tombol_search py-2 border-right-0 border" placeholder="Cari nama jalan ...">
+                            <span class="input-group-append">
+                                <button class="btn btn-outline-secondary tombol_search border-left-0 border" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div> -->
 
                 <!-- Checkbox -->
                 <div class="layout_checkbox">
@@ -169,7 +168,7 @@
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:7px;" class="btn active btn-outline-light btn-md tombol_menu" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab" aria-controls="pills-lokasi" aria-selected="true"><i class="fa fa-map-marker"></i></a>
+                                <a style="padding:7px;" class="active aktip btn btn-outline-light btn-md tombol_menu" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab" aria-controls="pills-lokasi" aria-selected="true"><i class="fa fa-map-marker"></i></a>
                                 <br>
                                 <label class="size_menu">Lokasi</label>
                             </li>
@@ -199,7 +198,7 @@
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class=" btn btn-outline-light btn-md tombol_menu" id="kblikeg-tab" data-toggle="pill" href="#pills-kblikeg" role="tab" aria-controls="pills-kblikeg" aria-selected="false"><i class="ri-user-search-fill"></i></a>
+                                <a style="padding:9px;" class=" btn  btn-outline-light btn-md tombol_menu" id="kblikeg-tab" data-toggle="pill" href="#pills-kblikeg" role="tab" aria-controls="pills-kblikeg" aria-selected="false"><i class="ri-user-search-fill"></i></a>
                                 <br>
                                 <label style="margin-top: 8px;" class="size_menu">Kode KBLI</label>
                             </li>
@@ -233,7 +232,7 @@
 
                     <div class="tab-pane show active" id="pills-lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
                         <div class="container">
-                            <p class="card-title mt-2 text-center judul_isi_menu font-weight-bold">Info Lokasi</p>
+                            <p class="card-title mt-2 text-center judul_isi_menu lighter">Info Lokasi</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text_all"><label>Koordinat</label></div>
@@ -306,7 +305,7 @@
 
                     <div class="tab-pane " id="pills-ekonomi" role="tabpanel" aria-labelledby="ekonomi-tab">
                         <div class="container">
-                            <p class="card-title mt-2 judul_isi_menu text-center font-weight-bold">Usaha Mikro Kecil</p>
+                            <p class="card-title mt-2 judul_isi_menu text-center lighter">Usaha Mikro Kecil</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 text_all"><label>Pelaku Usaha</label></div>
@@ -322,7 +321,7 @@
                                 </div>
 
                                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 offset-2">
-                                    <p style="font-size: 14px; margin-bottom:-24px; margin-left: -20px; color:#FFFFFF" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
+                                    <p style="font-size: 14px; margin-bottom:-24px; margin-left: -20px; color:#FFFFFF" class="lighter">Jumlah usaha mikro dikelurahan</p>
                                     <canvas id="pie-chart" width="37" height="50">
 
                                     </canvas>
@@ -334,7 +333,7 @@
 
                             </div>
 
-                            <p class="card-title mb-3 mt-3 judul_isi_menu text-center font-weight-bold">Pendapatan Rata-Rata Per Bulan</p>
+                            <p class="card-title mb-3 mt-3 judul_isi_menu text-center lighter">Pendapatan Rata-Rata Per Bulan</p>
 
                             <div class="row space_judul" style="margin-left:15px;">
 
@@ -412,7 +411,7 @@
 
                     <div class="tab-pane" id="pills-zonasi" role="tabpanel" aria-labelledby="zonasi-tab">
                         <div class="container">
-                            <p class="card-title mt-2 text-center judul_isi_menu font-weight-bold">Zonasi</p>
+                            <p class="card-title mt-2 text-center judul_isi_menu lighter">Zonasi</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-md-5 text_all"><label>Nama Usaha</label></div>
@@ -441,7 +440,7 @@
 
                     <div class="tab-pane" id="pills-persil" role="tabpanel" aria-labelledby="persil-tab">
                         <div class="container">
-                            <p class="card-title mt-2 judul_isi_menu text-center font-weight-bold">Persil</p>
+                            <p class="card-title mt-2 judul_isi_menu text-center lighter">Persil</p>
 
                             <div class="row space_judul row_mid_judul">
                                 <div class="col-md-5 text_all"><label>Lahan Eksisting</label></div>
@@ -520,7 +519,7 @@
 
                     <div class="tab-pane " id="pills-poi" role="tabpanel" aria-labelledby="poi-tab">
                         <div class="container">
-                            <p class="card-title mt-2 text-center judul_isi_menu font-weight-bold">POI</p>
+                            <p class="card-title mt-2 text-center judul_isi_menu lighter">POI</p>
 
                             <div class="accordion" id="PoiCollabse" style="margin-top: 14px;">
                                 <div class="row row_mid_judul2">
@@ -635,11 +634,11 @@
 
                     <div class="tab-pane " id="pills-kblikeg" role="tabpanel" aria-labelledby="kblikeg-tab">
                         <div class="container">
-                            <p class="card-title  mt-2 text-center judul_isi_menu font-weight-bold">Kode KBLI</p>
+                            <p class="card-title  mt-2 text-center judul_isi_menu lighter">Kode KBLI</p>
 
                             <div style="margin-top: 15px;" class="row ml-1">
                                 <div class="col-md-5 text_all">
-                                    <p class="font-weight-bold">cari kbli berdasar</p>
+                                    <p class="lighter">cari kbli berdasar</p>
                                 </div>
                             </div>
 
@@ -669,16 +668,16 @@
 
 
                             <div style="margin-top: 3px;" class="row ml-1">
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text_all"><label>Kegiatan</label></div>
-                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text_all">
-                                    <textarea name="" style="margin-left: 10px;" id="" cols="25" rows="2"></textarea>
+                                <div class="col-md-4 text_all"><label>Kegiatan</label></div>
+                                <div class="col-md-7 text_all">
+                                    <textarea name="" style="margin-left: 10px;" id="" cols="26" rows="2"></textarea>
                                 </div>
                             </div>
 
                             <div style="margin-top: 4px;" class="row ml-1">
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text_all"><label>Sektor</label></div>
-                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text_all">
-                                    <textarea name="" style="margin-left: 10px;" id="" cols="25" rows="2"></textarea>
+                                <div class="col-md-4 text_all"><label>Sektor</label></div>
+                                <div class="col-md-7 text_all">
+                                    <textarea name="" style="margin-left: 10px;" id="" cols="26" rows="2"></textarea>
                                 </div>
                             </div>
 
@@ -713,7 +712,7 @@
 
                         </div>
 
-                        <table style="margin:0;" class="table table-borderless mt-4 table-kbli">
+                        <table style="margin:0;" class="table table-borderless mt-4">
                             <thead>
                                 <tr>
                                     <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
@@ -733,12 +732,12 @@
                             </tbody>
                         </table>
 
-                        <p class="card-title judul_isi_menu text-center font-weight-bold mt-2">Keterangan</p>
+                        <p class="card-title judul_isi_menu text-center lighter mt-2">Keterangan</p>
                     </div>
 
                     <!-- <div class="tab-pane" id="pills-kblilok" role="tabpanel" aria-labelledby="kblilok-tab">
                         <div class="container">
-                            <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Lokasi</p>
+                            <p style="font-size: 14px;" class="card-title  mt-2 text-center lighter">KBLI Lokasi</p>
 
                             <div style="margin-top: 15px;" class="row ml-1">
                                 <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
@@ -813,13 +812,13 @@
                             </tbody>
                         </table>
 
-                        <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Keterangan</p>
+                        <p style="font-size: 14px;" class="card-title  mt-2 text-center lighter">Keterangan</p>
                     </div> -->
 
                     <!-- <div class="tab-pane" id="pills-kalkulator" role="tabpanel" aria-labelledby="kalkulator-tab">
                         <div class="container">
 
-                            <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">Kalkulator</p>
+                            <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center lighter">Kalkulator</p>
 
                             <table style="margin-top: 18px;" class="table table-hover">
                                 <thead>
@@ -844,7 +843,7 @@
                     <!-- <div class="tab-pane" id="pills-hbu" role="tabpanel" aria-labelledby="hbu-tab">
                         <div class="container">
 
-                            <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">HBU Analyzer</p>
+                            <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center lighter">HBU Analyzer</p>
 
                             <table style="margin-top: 18px;" class="table table-hover">
                                 <thead>
@@ -978,7 +977,7 @@
 
         <div class="detail_jumlah">
             <div class="container">
-                <span class="text_all font-weight-bold">Detail Omzet</span>
+                <span class="text_all">Detail Omzet</span>
 
                 <div class="text_all">
                     <div>Kelurahan : Menteng</div>
@@ -1038,7 +1037,7 @@
             $(this).hide();
         });
 
-        // class aktip
+
         $(document).ready(function() {
             $(".aktip").each(function() {
                 $(this).addClass("active");
@@ -1139,18 +1138,13 @@
                 datasets: [{
                     label: "Kelurahan",
                     backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                    data: [478, 267, 734],
+                    data: [478, 267, 734]
                 }]
             },
             options: {
                 title: {
-                    display: true,
-                },
-                legend: {
-                    labels: {
-                        fontColor: 'white'
-                    }
-                },
+                    display: true
+                }
             }
         });
 
@@ -1171,25 +1165,7 @@
             options: {
                 title: {
                     display: true,
-                    text: 'Jumlah',
-                    fontColor: 'white'
-                },
-                legend: {
-                    labels: {
-                        fontColor: 'white'
-                    }
-                },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            fontColor: 'white'
-                        }
-                    }],
-                    xAxes: [{
-                        ticks: {
-                            fontColor: 'white'
-                        }
-                    }],
+                    text: 'Jumlah'
                 }
             }
         });
