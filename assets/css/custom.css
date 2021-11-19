@@ -1,10 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
-  /* margin: 0; */
-  /* padding: 0; */
-  font-family: "Roboto", sans-serif;
-}
+  font-family: 'Montserrat', sans-serif;
+  }
 
 .form-control-file, .form-control-range{
   width: 98% !important;
@@ -138,7 +136,7 @@
 
 .flex-container li{
   margin: 3px;
-  flex: 0 1 calc(20% - 8px);
+  flex: 0 1 calc(19% - 8px);
 }
 
 /* .flex-container div{
@@ -258,8 +256,13 @@ textarea {
 
 /* Start Range */
 
+input[type=range]::-moz-range-progress {
+  background-color: #007bff;
+  height: 7px;
+}
+
 /* Edge & Chrome */
-input[type=range]{
+/* input[type=range]{
   -webkit-appearance: none;
 }
 
@@ -287,15 +290,13 @@ input[type=range]:focus {
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #007bff;
-}
+} */
 
 /* Firefox */
 
-input[type=range]{
-  /* fix for FF unable to apply focus style bug  */
+/* input[type=range]{
   border: 1px solid white;
 
-  /*required for proper track sizing in FF*/
   width: 350px;
 }
 
@@ -315,7 +316,7 @@ input[type=range]::-moz-range-thumb {
   background: #007bff;
 }
 
-/*hide the outline behind the border*/
+hide the outline behind the border
 input[type=range]:-moz-focusring{
   outline: 1px solid white;
   outline-offset: -1px;
@@ -323,13 +324,202 @@ input[type=range]:-moz-focusring{
 
 input[type=range]:focus::-moz-range-track {
   background: #007bff;
-}
+} */
 
 /* Finish Range */
 
+.mapboxgl-ctrl-top-right {
+  top: 20% !important;
+  right: 0 !important;
+}
+
+/* Start Konsultasi */
+
+.comments button {
+  background-color: transparent;
+  border: none;
+}
+
+.comments .comment-box {
+  width: 100%;
+  float: left;
+  height: 100%;
+  background-color: #FAFAFA;
+  padding: 10px 10px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.comments .add-comment {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.comments .commenter-pic {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.comments .add-comment .commenter-name {
+  width: 100%;
+  padding-left: 75px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+
+.comments .add-comment input {
+  border-top: 0px;
+  border-bottom: 1px solid #ccc;
+  border-left: 0px;
+  border-right: 0px;
+  outline: 0px;
+  box-shadow: none;
+  border-radius: 0;
+  width: 100%;
+  padding: 0;
+  font-weight: normal;
+}
+
+.comments .add-comment input:focus {
+  border-color: #03a9f4;
+  border-width: 2px;
+}
+
+.comments .add-comment button[type=submit] {
+  background-color: #03a9f4;
+  color: #fff;
+  margin-right: 0px;
+}
+
+.comments .add-comment button {
+  background-color: #f5f5f5;
+  margin: 10px 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  float: right;
+}
+
+.comments .commenter-name .comment-time {
+  font-weight: normal;
+  margin-left: 18px;
+  font-size: 13px;
+}
+
+
+.comments p.comment-txt {
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+  padding: 0px 0px 15px;
+}
+
+.comments .commenter-name {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.comments .comment-meta {
+  font-size: 13px;
+  color: #333;
+  padding: 2px 5px 0px;
+  line-height: 20px;
+  float: right;
+}
+
+.comments .reply-box {
+  display: none;
+}
+
+.comments .replied {
+  background-color: #fff;
+  width: 95%;
+  float: right;
+  margin-top: 15px;
+}
+
+/*======Responsive CSS=======*/
+@media (max-width: 767px) {
+  .comments .commenter-name {
+      font-size: 13px;
+      top: -5px;
+  }
+
+  .comments .commenter-pic {
+      width: 40px;
+      height: 40px;
+  }
+
+  .comments .commenter-name a {
+      display: block;
+  }
+
+  .comments .commenter-name .comment-time {
+      display: block;
+      margin-left: 0px;
+  }
+}
+
+/* End Konsultasi */
+
+.konsultasi_flex{
+  display: flex;
+  align-items: center;
+}
+
+.gambar_konsultasi_flex{
+  padding: 10px;
+  height: 50px;
+}
+
+.text_konsultasi_flex{
+  padding: 10px;
+  height: 50px;
+}
 
 
 
+flex-container-1 {
+  display: flex;                   /* establish flex container */
+  flex-direction: row;             /* flex items will align horizontally */
+  align-items: center;             /* center flex items vertically */
+  height: 60px;
+  /* width: 100%; */
+}
 
+flex-container-1 > flex-item {
+  float: left;
+  flex: 0 0 15%;                   /* <flex-grow> <flex-shrink> <flex-basis> */
+  margin-right: 8px;               /* a bit of space between the centered items */
+}
+
+flex-container-2 {
+  margin-top: -10px;
+  flex: 0 0 65%;
+  display: flex;                   /* flex item is now also flex container */
+  flex-direction: column;          /* items will stack vertically */
+  justify-content: space-between;  /* align items vertically */
+}
+
+.txt_konsul{
+  font-size: 13px;
+}
+
+.drop_login{
+  float: right;
+  margin-top:20px;
+  margin-right:15px;
+}
 
 

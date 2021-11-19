@@ -11,7 +11,6 @@
     <link rel="icon" href="assets/gambar/favicon.ico">
 
     <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 
     <!-- Icon -->
@@ -31,6 +30,7 @@
 <body>
 
 
+
     <!-- hide -->
     <button class="btn btn_hide_side_bar" type="button" id="hide_side_bar">
         <i class="btn_icon_hide ri-arrow-left-s-fill fa-2x"></i>
@@ -48,7 +48,7 @@
 
                 <img src="assets/gambar/logo_jakpintas.png" width="55px" style="margin-left: 10%;margin-right: 10px;">
 
-                <span class="HeadText">Peta Perijinan dan Investasi</span>
+                <span class="HeadText font-weight-bold">Peta Perijinan dan Investasi</span>
 
             </div>
 
@@ -142,7 +142,7 @@
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:7px;" class="active aktip btn btn-outline-primary btn-md tombol_menu" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab" aria-controls="pills-lokasi" aria-selected="true"><i class="fa fa-map-marker"></i></a>
+                                <a style="padding:7px;" class="active btn btn-outline-primary btn-md tombol_menu" id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab" aria-controls="pills-lokasi" aria-selected="true"><i class="fa fa-map-marker"></i></a>
                                 <br>
                                 <label class="size_menu">Lokasi</label>
                             </li>
@@ -177,23 +177,7 @@
                                 <label style="margin-top: 8px;" class="size_menu">Kode KBLI</label>
                             </li>
 
-                            <!-- <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class="btn  btn-outline-primary btn-md tombol_menu" id="kblilok-tab" data-toggle="pill" href="#pills-kblilok" role="tab" aria-controls="pills-kblilok" aria-selected="false"><i class="ri-user-search-fill"></i></a>
-                                <br>
-                                <label style="margin-top: 8px;" class="size_menu">KBLI Lokasi</label>
-                            </li> -->
-
-                            <!-- <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class="btn btn-outline-primary btn-md tombol_menu" id="kalkulator-tab" data-toggle="pill" href="#pills-kalkulator" role="tab" aria-controls="pills-kalkulator" aria-selected="false"><i class="ri-calculator-fill"></i></a>
-                                <br>
-                                <label class="size_menu">Kalkulator</label>
-                            </li> -->
-
-                            <!-- <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a style="padding:9px;" class="btn btn-outline-primary btn-md tombol_menu" id="hbu-tab" data-toggle="pill" href="#pills-hbu" role="tab" aria-controls="pills-hbu" aria-selected="false"><i class="ri-calculator-fill"></i></a>
-                                <br>
-                                <label style="margin-top: 8px;" class="size_menu">HBU Analyzer</label>
-                            </li> -->
+                            <!-- Pending menu pin-->
 
                         </ul>
 
@@ -204,7 +188,8 @@
 
                 <!-- Isi Menu -->
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane show active" id="pills-lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
+
+                    <div class="tab-pane active" id="pills-lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
                         <div class="container">
                             <p style="font-size: 14px;" class="card-title mt-2 text-center font-weight-bold">Info Lokasi</p>
 
@@ -295,7 +280,7 @@
                                 </div>
 
                                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 offset-2">
-                                    <p style="font-size: 14px; margin-bottom:-24px;" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
+                                    <p style="font-size: 14px; margin-bottom:-24px; margin-left:-30px;" class="font-weight-bold">Jumlah usaha mikro dikelurahan</p>
                                     <canvas id="pie-chart" width="37" height="50">
 
                                     </canvas>
@@ -398,7 +383,6 @@
                                 <div class="col-lg-5 text_all"><label>Zona</label></div>
                                 <div class="col-lg-7 text_all">
                                     <p>Zona Perumahan KDB Sedang-Tinggi</p>
-                                    <!-- <p>-6427374984, 1009843234a</p> -->
                                 </div>
                             </div>
 
@@ -613,26 +597,21 @@
                             <div style="margin-top: 15px;" class="row ml-1">
                                 <div class="col-md-5 text_all"><label>Cari berdasarkan</label></div>
                                 <div class="col-md-7 text_all">
-                                    <!-- <div class="form-check" style="margin-left: -18px;">
-                                        <input class="form-check-input" type="radio" name="kegiatan"  value="Kegiatan" checked>Kegiatan
-                                        <br>
-                                        <input class="form-check-input" type="radio" name="lokasi"  value="Lokasi" >Lokasi
-                                    </div> -->
 
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                            <label class="form-check-label" for="exampleRadios1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">
                                             Kegiatan
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                            <label class="form-check-label" for="exampleRadios2">
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">
                                             Lokasi
-                                            </label>
-                                        </div>
+                                        </label>
+                                    </div>
                                 </div>
-                        </div>
+                            </div>
 
                             <div style="margin-top: 3px;" class="row ml-1">
                                 <div class="col-md-4 text_all"><label>Kegiatan</label></div>
@@ -674,9 +653,6 @@
                             </div>
 
 
-
-
-
                         </div>
 
                         <table style="margin:0;" class="table table-borderless mt-4">
@@ -702,134 +678,8 @@
                         <p style="font-size: 14px;" class="card-title  text-center font-weight-bold mt-2">Keterangan</p>
                     </div>
 
-                    <!-- <div class="tab-pane" id="pills-kblilok" role="tabpanel" aria-labelledby="kblilok-tab">
-                        <div class="container">
-                            <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">KBLI Lokasi</p>
 
-                            <div style="margin-top: 15px;" class="row ml-1">
-                                <div class="col-md-4 text_all"><label>Lokasi Usaha</label></div>
-                                <div class="col-md-7">
-                                    <div class="form-group input-group-sm">
-                                        <select class="form-control" style="margin-left: 10px;">
-                                            <option>Skala1</option>
-                                            <option>Skala2</option>
-                                            <option>Skala2</option>
-
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="margin-top: -3px;" class="row ml-1">
-                                <div class="col-md-4 text_all"><label>Kegiatan</label></div>
-                                <div class="col-md-7 text_all">
-                                    <textarea style="margin-left: 10px;" name="" id="" cols="23" rows="2"></textarea>
-                                </div>
-                            </div>
-
-                            <div style="margin-top: 3px;" class="row ml-1">
-                                <div class="col-md-4 text_all"><label>Sektor Input</label></div>
-                                <div class="col-md-7 text_all">
-                                    <textarea style="margin-left: 10px;" name="" id="" cols="23" rows="2"></textarea>
-                                </div>
-                            </div>
-
-                            <div style="margin-top: 5px;" class="row ml-1">
-                                <div class="col-md-4 text_all"><label>Skala Usaha</label></div>
-                                <div class="col-md-7">
-                                    <div class="form-group input-group-sm">
-                                        <select style="margin-left: 10px;" class="form-control">
-                                            <option>Skala1</option>
-                                            <option>Skala2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div style="margin-top: -5px;" class="row ml-1">
-                                <div class="col-md-5 text_all"><label>Cari berdasarkan</label></div>
-                                <div class="col-md-7 text_all">
-                                    <div class="form-check" style="margin-left: -18px;">
-                                        <input class="form-check-input" type="radio" name="kegiatan"  value="Kegiatan" >Kegiatan
-                                        <br>
-                                        <input class="form-check-input" type="radio" name="lokasi"  value="Lokasi" >Lokasi
-                                    </div>
-                                </div>
-                        </div>
-
-                        </div>
-
-                        <table style="margin:0;" class="table table-borderless mt-4">
-                            <thead>
-                                <tr>
-                                    <th class="text_all text-center" style="width:30%;">Kode KBLI</th>
-                                    <th class="text_all text-center">Kegiatan</th>
-                                    <th class="text_all text-center">Resiko</th>
-                                    <th class="text_all text-center">ITBX</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="text_all text-center" style="width:30%;">13472</td>
-                                    <td class="text_all text-center">Perdagangan Kue Basah</td>
-                                    <td class="text_all text-center">Menengah</td>
-                                    <td class="text_all text-center">Bersyarat</td>
-
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p style="font-size: 14px;" class="card-title  mt-2 text-center font-weight-bold">Keterangan</p>
-                    </div> -->
-
-                    <!-- <div class="tab-pane" id="pills-kalkulator" role="tabpanel" aria-labelledby="kalkulator-tab">
-                        <div class="container">
-
-                            <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">Kalkulator</p>
-
-                            <table style="margin-top: 18px;" class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th class="text_all">Kode</th>
-                                        <th class="text_all">KBLI</th>
-                                        <th class="text_all">ITBX</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text_all">1</td>
-                                        <td class="text_all">Example1</td>
-                                        <td class="text_all">Example1</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="tab-pane" id="pills-hbu" role="tabpanel" aria-labelledby="hbu-tab">
-                        <div class="container">
-
-                            <p style="font-size: 14px;" class="card-title mb-1 mt-2 text-center font-weight-bold">HBU Analyzer</p>
-
-                            <table style="margin-top: 18px;" class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th class="text_all">Kode</th>
-                                        <th class="text_all">KBLI</th>
-                                        <th class="text_all">ITBX</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text_all">1</td>
-                                        <td class="text_all">Example1</td>
-                                        <td class="text_all">Example1</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div> -->
+                    <!-- PENDING Content Pin,Komen,kbliLokasi,Kalkulator,HBU-->
 
 
                 </div>
@@ -839,7 +689,7 @@
 
         </div>
     </div>
-    <!-- </div> -->
+
 
     <div id='map' style='width: 100%; height: 100%; position: absolute;'>
 
@@ -848,8 +698,7 @@
 
     <div class="detail_omzet">
         <div class="container">
-            <strong class="text_all">Detail Omzet</strong>
-            <div class="text_all">
+            <div class="text_all mt-1">
                 <div><span class="details_omzet" style="background-color: rgb(255, 237, 160);"></span><span>0-4M</span></div>
                 <div><span class="details_omzet" style="background-color: rgb(255, 230, 117);"></span><span>5M-8M</span></div>
                 <div><span class="details_omzet" style="background-color: rgb(255, 223, 82);"></span><span>9M-12M</span></div>
@@ -876,8 +725,6 @@
 
 
 
-
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.slim.min.js" rel="preload"></script>
 
@@ -888,52 +735,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="assets/js/Chart.min.js"></script>
-
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
-
-    <script>
-        new Chart(document.getElementById("pie-chart"), {
-            type: 'pie',
-            data: {
-                labels: ["Kel A", "Kel B", "Kel C"],
-                datasets: [{
-                    label: "Kelurahan",
-                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-                    data: [478, 267, 734]
-                }]
-            },
-            options: {
-                title: {
-                    display: true
-                }
-            }
-        });
-
-
-        new Chart(document.getElementById("bar-chart-grouped"), {
-            type: 'bar',
-            data: {
-                labels: ["1900", "1950", "1999", "2050"],
-                datasets: [{
-                    label: "Kecamatan A",
-                    backgroundColor: "#3e95cd",
-                    data: [133, 221, 783, 478]
-                }, {
-                    label: "Kecamatan B",
-                    backgroundColor: "#8e5ea2",
-                    data: [832, 447, 175, 534]
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: 'Jumlah'
-                }
-            }
-        });
-    </script>
 
 
     <script>
@@ -961,14 +765,8 @@
             $('#hide_side_bar').css('display', 'block');
             $(this).hide();
         });
-
-
-        $(document).ready(function() {
-            $(".aktip").each(function() {
-                $(this).addClass("active");
-            })
-        });
     </script>
+
 
     <!-- MAP BOX -->
     <script>
@@ -1027,9 +825,6 @@
             );
         });
 
-
-
-
         const draw = new MapboxDraw({
             displayControlsDefault: false,
             controls: {
@@ -1045,6 +840,52 @@
         map.on('draw.delete');
         map.on('draw.update');
     </script>
+
+
+
+    <!-- CHART -->
+    <script>
+        new Chart(document.getElementById("pie-chart"), {
+            type: 'pie',
+            data: {
+                labels: ["Kel A", "Kel B", "Kel C"],
+                datasets: [{
+                    label: "Kelurahan",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: [478, 267, 734]
+                }]
+            },
+            options: {
+                title: {
+                    display: true
+                }
+            }
+        });
+
+
+        new Chart(document.getElementById("bar-chart-grouped"), {
+            type: 'bar',
+            data: {
+                labels: ["1900", "1950", "1999", "2050"],
+                datasets: [{
+                    label: "Kecamatan A",
+                    backgroundColor: "#3e95cd",
+                    data: [133, 221, 783, 478]
+                }, {
+                    label: "Kecamatan B",
+                    backgroundColor: "#8e5ea2",
+                    data: [832, 447, 175, 534]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                }
+            }
+        });
+    </script>
+
 
 
 
