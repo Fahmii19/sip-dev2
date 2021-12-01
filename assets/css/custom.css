@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
+
+
 * {
   /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Roboto', sans-serif;
@@ -376,6 +378,50 @@ input[type=range]::-moz-range-progress {
 
 .container_grid .col_info {
   text-align: right;
+}
+
+
+.wm-search__dropdown,
+.wm-search__selected {
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: Rubik, sans-serif;
+  width: 100%;
+}
+
+.wm-search__dropdown {
+  background: #fff;
+  max-height: 200px;
+  overflow: auto;
+  top: 37px !important;
+  left: 1px;
+}
+
+.wm-search__dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 400;
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+}
+
+.wm-search__dropdown,
+.wm-search__selected {
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-family: Rubik, sans-serif;
+  width: 100%;
+}
+
+.wm-li-result {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px #dcdcdc solid;
 }
 
 
@@ -1351,10 +1397,6 @@ input[type=range]::-moz-range-progress {
   .mapboxgl-ctrl-top-right {
     display: none;
   }
-
-
-
-
 
 
 

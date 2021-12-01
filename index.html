@@ -247,6 +247,53 @@
                                 <input type="search" id="example-search-input"
                                     class="form-control tombol_search py-2 border-right-0 border"
                                     placeholder="Cari nama jalan ...">
+
+
+                                <!-- Ori -->
+                                <div class="wm-search__dropdown">
+                                    <ul class="wm-search__dropdown" role="listbox"></ul>
+                                </div>
+
+                                <!-- Dummy -->
+                                <ul class="wm-search__dropdown" role="listbox">
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.182039999,106.822804382" data-wilayah="GAMBIR">
+                                        <i class="fa fa-map-marker" style="font-size: 15px;"></i> JL. M.H. THAMRIN,
+                                        GAMBIR, GAMBIR, JAKARTA
+                                        PUSAT</li>
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.180450453,106.824284249" data-wilayah="GAMBIR">
+                                        <i class="fa fa-map-marker" style="font-size: 15px;"></i> JL. MEDAN MERDEKA
+                                        SELATAN, GAMBIR, GAMBIR,
+                                        JAKARTA PUSAT</li>
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.176746644,106.833446891" data-wilayah="GAMBIR">
+                                        <i class="fa fa-map-marker" style="font-size: 15px;"></i> JL. PEJAMBON III,
+                                        GAMBIR, GAMBIR, JAKARTA
+                                        PUSAT</li>
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.175597773,106.820942965" data-wilayah="GAMBIR">
+                                        <i class="fa fa-map-marker" style="font-size: 15px;"></i> JL. MUSEUM, GAMBIR,
+                                        GAMBIR, JAKARTA PUSAT
+                                    </li>
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.16785782,106.821058385" data-wilayah="GAMBIR"><i
+                                            class="fa fa-map-marker" style="font-size: 15px;"></i>
+                                        JL. MAJAPAHIT, GAMBIR, GAMBIR, JAKARTA PUSAT
+                                    </li>
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.17101686,106.82723848" data-wilayah="GAMBIR"><i
+                                            class="fa fa-map-marker" style="font-size: 15px;"></i>
+                                        JL. VETERAN II, GAMBIR, GAMBIR, JAKARTA PUSAT
+                                    </li>
+                                    <li class="wm-li-result wilayah-select text_all"
+                                        data-kordinat="-6.180445647,106.82014413" data-wilayah="GAMBIR"><i
+                                            class="fa fa-map-marker" style="font-size: 15px;"></i>
+                                        JL. BUDI KEMULIAAN, GAMBIR, GAMBIR, JAKARTA
+                                        PUSAT</li>
+                                </ul>
+
+
                                 <span class="input-group-append">
                                     <button class="btn btn-secondary tombol_search border-left-0 border" type="button">
                                         <i class="fa fa-search"></i>
@@ -352,7 +399,7 @@
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a class=" btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
+                                <a class="active btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
                                     id="lokasi-tab" data-toggle="pill" href="#pills-lokasi" role="tab"
                                     aria-controls="pills-lokasi" aria-selected="true"><i
                                         class="fa fa-map-marker"></i></a>
@@ -361,7 +408,7 @@
                             </li>
 
                             <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 p-2 nav-item">
-                                <a class="active btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
+                                <a class=" btn btn-outline-primary btn-md tombol_menu padding_icon_navpill"
                                     id="ekonomi-tab" data-toggle="pill" href="#pills-ekonomi" role="tab"
                                     aria-controls="pills-ekonomi" aria-selected="false"><i
                                         class="ri-funds-box-fill"></i></a>
@@ -487,7 +534,7 @@
                 <!-- Mengatur Isi Konten Menu Web -->
                 <div class="tab-content for_web" id="pills-tabContent">
 
-                    <div class="tab-pane " id="pills-lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
+                    <div class="tab-pane active" id="pills-lokasi" role="tabpanel" aria-labelledby="lokasi-tab">
                         <div class="container">
                             <p class="card-title mt-2 text-center font-weight-bold judul_utama">Info Lokasi</p>
 
@@ -581,7 +628,7 @@
                         </div>
                     </div>
 
-                    <div class="tab-pane active" id="pills-ekonomi" role="tabpanel" aria-labelledby="ekonomi-tab">
+                    <div class="tab-pane " id="pills-ekonomi" role="tabpanel" aria-labelledby="ekonomi-tab">
 
                         <div class="container">
 
